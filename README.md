@@ -2,8 +2,9 @@
 
 # MrCupp Website Project
 
-This project is for the mrcupp.com personal domain
+This is my personal website.
 
+It will likely go through a ton of iterations.
 
 **The website uses the following technology:**
 - [![npm version](https://badge.fury.io/js/bootstrap.svg)](https://badge.fury.io/js/bootstrap)  bootstrap

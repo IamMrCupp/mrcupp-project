@@ -18,12 +18,12 @@
 }
 
 // override the defaults for a few things
-h1 {
-    font-family: Futura-Bold;
+h1,h2,h3,h4 {
+    font-family: Hack;
 }
 
 p {
-    font-family: Futura-Bold;
+    font-family: Hack;
 }
 
 // create some new classes
@@ -44,9 +44,9 @@ p {
     color: $linkedin_blue;
 }
 
-.logo-main {
-    width: 50%;
-    height: 50%;
+.esp-logo {
+    width: 20%;
+    height: 20%;
 }
 
 .logo-footer {
@@ -63,6 +63,10 @@ p {
     background-color: #a4cef8;
 }
 
+.site-container-text {
+    font-family: Hack;
+}
+
 .site-footer {
     background-color: #a4f8c4;
 }
@@ -76,7 +80,7 @@ p {
 }
 
 .site-header-text {
-    font-family: Futura-Bold;
+    font-family: Hack;
 }
 
 .site-navigation {
@@ -84,5 +88,5 @@ p {
 }
 
 .footer {
-    font-family: Futura-Bold;
+    font-family: Hack;
   }
