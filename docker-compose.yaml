@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+    website:
+        image: ${IMAGE}
+        ports:
+            - 8000:80
