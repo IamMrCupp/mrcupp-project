@@ -44,6 +44,14 @@ p {
     color: $linkedin_blue;
 }
 
+.social-button-github {
+    color: $github_brown;
+}
+
+.social-button-soundcloud {
+    color: $soundcloud_orange;
+}
+
 .esp-logo {
     width: 20%;
     height: 20%;
@@ -72,7 +80,7 @@ p {
 }
 
 .site-footer-text {
-    font-family: Futura-Bold;
+    font-family: Hack;
 }
 
 .site-header {
@@ -83,10 +91,13 @@ p {
     font-family: Hack;
 }
 
+.site-header-icon {
+    size: 5x
+}
 .site-navigation {
     background-color: #a0803c;
 }
 
 .footer {
     font-family: Hack;
-  }
+}
