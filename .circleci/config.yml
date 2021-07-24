@@ -94,7 +94,7 @@ workflows:
     jobs:
       - build-dev:
           context:
-            - mrcupp-project
+            - docker-env
           filters:
             branches:
               only: 
@@ -103,7 +103,7 @@ workflows:
     jobs:
       - build-master:
           context:
-            - mrcupp-project
+            - docker-env
           filters:
             branches:
               only: 
@@ -112,7 +112,7 @@ workflows:
     jobs:
       - build-tags:
           context:
-            - mrcupp-project
+            - docker-env
           filters:
             tags:
               only: 
