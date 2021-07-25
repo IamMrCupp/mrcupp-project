@@ -1,4 +1,6 @@
 version: 2.1
+orbs:
+  slack: circleci/slack@4.4.2
 jobs:
   build-dev:
     machine:
@@ -95,6 +97,7 @@ workflows:
       - build-dev:
           context:
             - docker-env
+            - slack
           filters:
             branches:
               only: 
@@ -104,6 +107,7 @@ workflows:
       - build-master:
           context:
             - docker-env
+            - slack
           filters:
             branches:
               only: 
@@ -113,6 +117,7 @@ workflows:
       - build-tags:
           context:
             - docker-env
+            - slack
           filters:
             tags:
               only: 
