@@ -18,21 +18,21 @@ jobs:
                   "type": "header",
                   "text": {
                     "type": "plain_text",
-                    "text": "New Build Started! :thumbs_up:"
+                    "text": "New Build Started!"
                   },
                   "type": "section",
                   "fields": [
                     {
                       "type": "mrkdwn",
-                      "text": "*Triggered by*:\\n$CIRCLE_USERNAME" 
+                      "text": "*Triggered by*: $CIRCLE_USERNAME" 
                     },
                     {
                       "type": "mrkdwn",
-                      "text": "*Project*:\\n$CIRCLE_PROJECT_REPONAME" 
+                      "text": "*Project*: $CIRCLE_PROJECT_REPONAME" 
                     },
                     {
                       "type": "mrkdwn",
-                      "text": "*Branch*:\\n$CIRCLE_BRANCH" 
+                      "text": "*Branch*: $CIRCLE_BRANCH" 
                     }
                   ]
                 }
@@ -82,21 +82,21 @@ jobs:
                   "type": "header",
                   "text": {
                     "type": "plain_text",
-                    "text": "New Build Started! :thumbs_up:"
+                    "text": "New Build Started!"
                   },
                   "type": "section",
                   "fields": [
                     {
                       "type": "mrkdwn",
-                      "text": "*Triggered by*:\\n$CIRCLE_USERNAME" 
+                      "text": "*Triggered by*: $CIRCLE_USERNAME" 
                     },
                     {
                       "type": "mrkdwn",
-                      "text": "*Project*:\\n$CIRCLE_PROJECT_REPONAME" 
+                      "text": "*Project*: $CIRCLE_PROJECT_REPONAME" 
                     },
                     {
                       "type": "mrkdwn",
-                      "text": "*Branch*:\\n$CIRCLE_BRANCH" 
+                      "text": "*Branch*: $CIRCLE_BRANCH" 
                     }
                   ]
                 }
@@ -146,21 +146,21 @@ jobs:
                   "type": "header",
                   "text": {
                     "type": "plain_text",
-                    "text": "New Build Started! :thumbs_up:"
+                    "text": "New Build Started!"
                   },
                   "type": "section",
                   "fields": [
                     {
                       "type": "mrkdwn",
-                      "text": "*Triggered by*:\\n$CIRCLE_USERNAME" 
+                      "text": "*Triggered by*: $CIRCLE_USERNAME" 
                     },
                     {
                       "type": "mrkdwn",
-                      "text": "*Project*:\\n$CIRCLE_PROJECT_REPONAME" 
+                      "text": "*Project*: $CIRCLE_PROJECT_REPONAME" 
                     },
                     {
                       "type": "mrkdwn",
-                      "text": "*Branch*:\\n$CIRCLE_BRANCH" 
+                      "text": "*Branch*: $CIRCLE_BRANCH" 
                     }
                   ]
                 }
