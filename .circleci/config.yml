@@ -18,7 +18,7 @@ jobs:
                   "type": "section",
                   "fields": [
                     {
-                      "type": "plain_text",
+                      "type": "mrkdwn",
                       "text": "*BUILD* Triggered by: $CIRCLE_USERNAME for $CIRCLE_PROJECT_REPONAME on $CIRCLE_BRANCH", 
                       "emoji": true
                     }
