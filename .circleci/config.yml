@@ -19,7 +19,7 @@ jobs:
                   "fields": [
                     {
                       "type": "plain_text",
-                      "text": "*BUILD* Triggered by: $CIRCLE_USERNAME for $CIRCLE_PROJECT_REPONAME on $CIRCLE_BRANCH" 
+                      "text": "*BUILD* Triggered by: $CIRCLE_USERNAME for $CIRCLE_PROJECT_REPONAME on $CIRCLE_BRANCH", 
                       "emoji": true
                     }
                   ]
@@ -71,7 +71,7 @@ jobs:
                   "fields": [
                     {
                       "type": "plain_text",
-                      "text": "*BUILD* Triggered by: $CIRCLE_USERNAME for $CIRCLE_PROJECT_REPONAME on $CIRCLE_BRANCH" 
+                      "text": "*BUILD* Triggered by: $CIRCLE_USERNAME for $CIRCLE_PROJECT_REPONAME on $CIRCLE_BRANCH",
                       "emoji": true
                     }
                   ]
@@ -123,7 +123,7 @@ jobs:
                   "fields": [
                     {
                       "type": "plain_text",
-                      "text": "*BUILD* Triggered by: $CIRCLE_USERNAME for $CIRCLE_PROJECT_REPONAME on $CIRCLE_BRANCH" 
+                      "text": "*BUILD* Triggered by: $CIRCLE_USERNAME for $CIRCLE_PROJECT_REPONAME on $CIRCLE_BRANCH", 
                       "emoji": true
                     }
                   ]
