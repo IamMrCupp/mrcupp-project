@@ -1,4 +1,6 @@
 version: 2.1
+orbs:
+  slack: circleci/slack@4.4.2
 jobs:
   build-dev:
     machine:
@@ -30,6 +32,12 @@ jobs:
           name: Make Images via Buildx
           command: |
             BUILDX_PLATFORMS="$BUILDX_PLATFORMS" make cross-build-dev
+      - slack/notify:
+          event: pass
+          template: basic_success_1
+      - slack/notify:
+          event: fail
+          template: basic_fail_1
   build-master:
     machine:
       image:  ubuntu-2004:202104-01
@@ -59,6 +67,12 @@ jobs:
           name: Make Images via Buildx
           command: |
             BUILDX_PLATFORMS="$BUILDX_PLATFORMS" make cross-build-latest
+      - slack/notify:
+          event: pass
+          template: basic_success_1
+      - slack/notify:
+          event: fail
+          template: basic_fail_1
   build-tags:
     machine:
       image:  ubuntu-2004:202104-01
@@ -88,6 +102,12 @@ jobs:
           name: Make Images via Buildx
           command: |
             BUILDX_PLATFORMS="$BUILDX_PLATFORMS" TAG="$CIRCLE_TAG" make cross-build
+      - slack/notify:
+          event: pass
+          template: basic_success_1
+      - slack/notify:
+          event: fail
+          template: basic_fail_1
 workflows:
   version: 2
   build-branch-dev:
@@ -95,6 +115,7 @@ workflows:
       - build-dev:
           context:
             - docker-env
+            - slack
           filters:
             branches:
               only: 
@@ -104,6 +125,7 @@ workflows:
       - build-master:
           context:
             - docker-env
+            - slack
           filters:
             branches:
               only: 
@@ -113,6 +135,7 @@ workflows:
       - build-tags:
           context:
             - docker-env
+            - slack
           filters:
             tags:
               only: 
