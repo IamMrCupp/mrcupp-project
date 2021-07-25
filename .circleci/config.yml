@@ -15,11 +15,40 @@ jobs:
             {
               "blocks": [
                 {
+                  "type": "header",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "New Build Started! :thumbs_up:"
+                  },
                   "type": "section",
                   "fields": [
                     {
                       "type": "mrkdwn",
-                      "text": "*BUILD* Triggered by: $CIRCLE_USERNAME for $CIRCLE_PROJECT_REPONAME on $CIRCLE_BRANCH" 
+                      "text": "*Triggered by*://n$CIRCLE_USERNAME" 
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Project*://n$CIRCLE_PROJECT_REPONAME" 
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Branch*://n$CIRCLE_BRANCH" 
+                    }
+                  ],
+                  "accessory": {
+                    "type": "image",
+                    "image_url": "https://assets.brandfolder.com/otz5mn-bw4j2w-6jzqo8/original/circle-logo-badge-black.png",
+                    "alt_text": "CircleCI Logo"
+                  },
+                  "type": "actions",
+                  "elements": [
+                    {
+                      "type": "button",
+                      "text": {
+                        "type": "plain_text",
+                        "text": "View Job"
+                      },
+                      "url": "${CIRCLE_BUILD_URL}"
                     }
                   ]
                 }
@@ -66,12 +95,40 @@ jobs:
             {
               "blocks": [
                 {
+                  "type": "header",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "New Build Started! :thumbs_up:"
+                  },
                   "type": "section",
                   "fields": [
                     {
-                      "type": "plain_text",
-                      "text": "*BUILD* Triggered by: $CIRCLE_USERNAME for $CIRCLE_PROJECT_REPONAME on $CIRCLE_BRANCH",
-                      "emoji": true
+                      "type": "mrkdwn",
+                      "text": "*Triggered by*://n$CIRCLE_USERNAME" 
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Project*://n$CIRCLE_PROJECT_REPONAME" 
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Branch*://n$CIRCLE_BRANCH" 
+                    }
+                  ],
+                  "accessory": {
+                    "type": "image",
+                    "image_url": "https://assets.brandfolder.com/otz5mn-bw4j2w-6jzqo8/original/circle-logo-badge-black.png",
+                    "alt_text": "CircleCI Logo"
+                  },
+                  "type": "actions",
+                  "elements": [
+                    {
+                      "type": "button",
+                      "text": {
+                        "type": "plain_text",
+                        "text": "View Job"
+                      },
+                      "url": "${CIRCLE_BUILD_URL}"
                     }
                   ]
                 }
@@ -118,12 +175,40 @@ jobs:
             {
               "blocks": [
                 {
+                  "type": "header",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "New Build Started! :thumbs_up:"
+                  },
                   "type": "section",
                   "fields": [
                     {
-                      "type": "plain_text",
-                      "text": "*BUILD* Triggered by: $CIRCLE_USERNAME for $CIRCLE_PROJECT_REPONAME on $CIRCLE_BRANCH", 
-                      "emoji": true
+                      "type": "mrkdwn",
+                      "text": "*Triggered by*://n$CIRCLE_USERNAME" 
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Project*://n$CIRCLE_PROJECT_REPONAME" 
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Branch*://n$CIRCLE_BRANCH" 
+                    }
+                  ],
+                  "accessory": {
+                    "type": "image",
+                    "image_url": "https://assets.brandfolder.com/otz5mn-bw4j2w-6jzqo8/original/circle-logo-badge-black.png",
+                    "alt_text": "CircleCI Logo"
+                  },
+                  "type": "actions",
+                  "elements": [
+                    {
+                      "type": "button",
+                      "text": {
+                        "type": "plain_text",
+                        "text": "View Job"
+                      },
+                      "url": "${CIRCLE_BUILD_URL}"
                     }
                   ]
                 }
