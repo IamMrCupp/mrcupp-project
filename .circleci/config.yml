@@ -134,9 +134,7 @@ jobs:
           command: |
             set -eu
             export DOCKER_CLI_EXPERIMENTAL=enabled
-            docker manifest create ghcr.io/${CIRCLECI_PROJECT_NAME}/${CIRCLE_PROJECT_REPONAME}:${CIRCLE_SHA1} \
-            ghcr.io/${CIRCLECI_PROJECT_NAME}/${CIRCLE_PROJECT_REPONAME}:x86_64-${CIRCLE_SHA1} \
-            ghcr.io/${CIRCLECI_PROJECT_NAME}/${CIRCLE_PROJECT_REPONAME}:arm64-${CIRCLE_SHA1}
+            docker manifest create ghcr.io/${CIRCLECI_PROJECT_NAME}/${CIRCLE_PROJECT_REPONAME}:${CIRCLE_SHA1} ghcr.io/${CIRCLECI_PROJECT_NAME}/${CIRCLE_PROJECT_REPONAME}:x86_64-${CIRCLE_SHA1} ghcr.io/${CIRCLECI_PROJECT_NAME}/${CIRCLE_PROJECT_REPONAME}:arm64-${CIRCLE_SHA1}
             docker push ghcr.io/${CIRCLECI_PROJECT_NAME}/${CIRCLE_PROJECT_REPONAME}:${CIRCLE_SHA1}
       - slack/notify:
           event: pass
