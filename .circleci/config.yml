@@ -146,7 +146,7 @@ jobs:
           template: basic_fail_1
 workflow:
   version: 2
-  deploy:
+  build:
     jobs:
       - build-arm64:
           context:
