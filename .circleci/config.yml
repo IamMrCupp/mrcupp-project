@@ -142,7 +142,7 @@ jobs:
       - slack/notify:
           event: fail
           template: basic_fail_1
-workflow:
+workflows:
   version: 2
   build:
     jobs:
