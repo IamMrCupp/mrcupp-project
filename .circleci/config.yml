@@ -148,7 +148,7 @@ jobs:
             set -eu
             export DOCKER_CLI_EXPERIMENTAL=enabled
             docker manifest create ghcr.io/iammrcupp/${CIRCLE_PROJECT_REPONAME}:${CIRCLE_SHA1} ghcr.io/iammrcupp/${CIRCLE_PROJECT_REPONAME}:x86_64-${CIRCLE_SHA1} ghcr.io/iammrcupp/${CIRCLE_PROJECT_REPONAME}:arm64-${CIRCLE_SHA1}
-            docker push ghcr.io/iammrcupp/${CIRCLE_PROJECT_REPONAME}:${CIRCLE_SHA1}
+            docker manifest push ghcr.io/iammrcupp/${CIRCLE_PROJECT_REPONAME}:${CIRCLE_SHA1}
       - slack/notify:
           event: pass
           template: basic_success_1
