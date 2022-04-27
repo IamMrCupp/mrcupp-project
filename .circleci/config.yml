@@ -104,8 +104,9 @@ jobs:
           event: fail
           template: basic_fail_1
   upload-manifest:
-    docker:
-      - image: cimg/python:3.8.2
+    machine:
+      image: ubuntu-2004:202201-02
+    resource_class: medium
     steps:
       - slack/notify:
           custom: |
