@@ -41,8 +41,8 @@ jobs:
       - deploy:
           name: "Build and upload x86_64 image"
           command: |
-            docker build -t ghcr.io/${CIRCLECI_USERNAME}/${CIRCLE_PROJECT_REPONAME}:x86_64-${CIRCLE_SHA1} .
-            docker push ghcr.io/${CIRCLECI_USERNAME}/${CIRCLE_PROJECT_REPONAME}:x86_64-${CIRCLE_SHA1}
+            docker build -t ghcr.io/IamMrCupp/${CIRCLE_PROJECT_REPONAME}:x86_64-${CIRCLE_SHA1} .
+            docker push ghcr.io/IamMrCupp/${CIRCLE_PROJECT_REPONAME}:x86_64-${CIRCLE_SHA1}
       - slack/notify:
           event: pass
           template: basic_success_1
@@ -87,8 +87,8 @@ jobs:
       - deploy:
           name: "Build and upload arm64 image"
           command: |
-            docker build -t ghcr.io/${CIRCLECI_USERNAME}/${CIRCLE_PROJECT_REPONAME}:arm64-${CIRCLE_SHA1} .
-            docker push ghcr.io/${CIRCLECI_USERNAME}/${CIRCLE_PROJECT_REPONAME}:arm64-${CIRCLE_SHA1}
+            docker build -t ghcr.io/IamMrCupp/${CIRCLE_PROJECT_REPONAME}:arm64-${CIRCLE_SHA1} .
+            docker push ghcr.io/IamMrCupp/${CIRCLE_PROJECT_REPONAME}:arm64-${CIRCLE_SHA1}
       - slack/notify:
           event: pass
           template: basic_success_1
@@ -134,8 +134,8 @@ jobs:
           command: |
             set -eu
             export DOCKER_CLI_EXPERIMENTAL=enabled
-            docker manifest create ghcr.io/${CIRCLECI_USERNAME}/${CIRCLE_PROJECT_REPONAME}:${CIRCLE_SHA1} ghcr.io/${CIRCLECI_USERNAME}/${CIRCLE_PROJECT_REPONAME}:x86_64-${CIRCLE_SHA1} ghcr.io/${CIRCLECI_USERNAME}/${CIRCLE_PROJECT_REPONAME}:arm64-${CIRCLE_SHA1}
-            docker push ghcr.io/${CIRCLECI_USERNAME}/${CIRCLE_PROJECT_REPONAME}:${CIRCLE_SHA1}
+            docker manifest create ghcr.io/IamMrCupp/${CIRCLE_PROJECT_REPONAME}:${CIRCLE_SHA1} ghcr.io/IamMrCupp/${CIRCLE_PROJECT_REPONAME}:x86_64-${CIRCLE_SHA1} ghcr.io/IamMrCupp/${CIRCLE_PROJECT_REPONAME}:arm64-${CIRCLE_SHA1}
+            docker push ghcr.io/IamMrCupp/${CIRCLE_PROJECT_REPONAME}:${CIRCLE_SHA1}
       - slack/notify:
           event: pass
           template: basic_success_1
