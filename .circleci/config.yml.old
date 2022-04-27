@@ -1,0 +1,233 @@
+# config for mrcupp-project circleci
+version: 2.1
+orbs:
+  slack: circleci/slack@4.4.2
+jobs:
+  build-dev:
+    machine:
+      image:  ubuntu-2004:202104-01
+      #docker_layer_caching: true   # this is a paid-for account feature :(
+    environment:
+      DOCKER_BUILDKIT: 1
+      BUILDX_PLATFORMS: linux/amd64,linux/arm64,linux/arm/v7
+    steps:
+      - slack/notify:
+          custom: |
+            {
+              "blocks": [
+                {
+                  "type": "header",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "New Build Started!"
+                  },
+                  "type": "section",
+                  "fields": [
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Triggered by*: $CIRCLE_USERNAME" 
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Project*: $CIRCLE_PROJECT_REPONAME" 
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Branch*: $CIRCLE_BRANCH" 
+                    }
+                  ]
+                }
+              ]
+            }
+          event: always
+      - checkout
+      - run:
+          name: Log in to docker hub
+          command: |
+            docker login -u $DOCKER_USER -p $DOCKER_PASS
+      - run:
+          name: Install buildx
+          command: |
+            BUILDX_BINARY_URL="https://github.com/docker/buildx/releases/download/v0.4.2/buildx-v0.4.2.linux-amd64"
+            curl --output docker-buildx \
+              --silent --show-error --location --fail --retry 3 \
+              "$BUILDX_BINARY_URL"
+            mkdir -p ~/.docker/cli-plugins
+            mv docker-buildx ~/.docker/cli-plugins/
+            chmod a+x ~/.docker/cli-plugins/docker-buildx
+            docker buildx install
+            # Run binfmt
+            docker run --rm --privileged tonistiigi/binfmt:latest --install "$BUILDX_PLATFORMS"
+      - run:
+          name: Make Images via Buildx
+          command: |
+            BUILDX_PLATFORMS="$BUILDX_PLATFORMS" make cross-build-dev
+      - slack/notify:
+          event: pass
+          template: basic_success_1
+      - slack/notify:
+          event: fail
+          template: basic_fail_1
+  build-master:
+    machine:
+      image:  ubuntu-2004:202104-01
+    environment:
+      DOCKER_BUILDKIT: 1
+      BUILDX_PLATFORMS: linux/amd64,linux/arm64,linux/arm/v7
+    steps:
+      - slack/notify:
+          custom: |
+            {
+              "blocks": [
+                {
+                  "type": "header",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "New Build Started!"
+                  },
+                  "type": "section",
+                  "fields": [
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Triggered by*: $CIRCLE_USERNAME" 
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Project*: $CIRCLE_PROJECT_REPONAME" 
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Branch*: $CIRCLE_BRANCH" 
+                    }
+                  ]
+                }
+              ]
+            }
+          event: always
+      - checkout
+      - run:
+          name: Log in to docker hub
+          command: |
+            docker login -u $DOCKER_USER -p $DOCKER_PASS
+      - run:
+          name: Install buildx
+          command: |
+            BUILDX_BINARY_URL="https://github.com/docker/buildx/releases/download/v0.4.2/buildx-v0.4.2.linux-amd64"
+            curl --output docker-buildx \
+              --silent --show-error --location --fail --retry 3 \
+              "$BUILDX_BINARY_URL"
+            mkdir -p ~/.docker/cli-plugins
+            mv docker-buildx ~/.docker/cli-plugins/
+            chmod a+x ~/.docker/cli-plugins/docker-buildx
+            docker buildx install
+            # Run binfmt
+            docker run --rm --privileged tonistiigi/binfmt:latest --install "$BUILDX_PLATFORMS"
+      - run:
+          name: Make Images via Buildx
+          command: |
+            BUILDX_PLATFORMS="$BUILDX_PLATFORMS" make cross-build-latest
+      - slack/notify:
+          event: pass
+          template: basic_success_1
+      - slack/notify:
+          event: fail
+          template: basic_fail_1
+  build-tags:
+    machine:
+      image:  ubuntu-2004:202104-01
+    environment:
+      DOCKER_BUILDKIT: 1
+      BUILDX_PLATFORMS: linux/amd64,linux/arm64,linux/arm/v7
+    steps:
+      - slack/notify:
+          custom: |
+            {
+              "blocks": [
+                {
+                  "type": "header",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "New Build Started!"
+                  },
+                  "type": "section",
+                  "fields": [
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Triggered by*: $CIRCLE_USERNAME" 
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Project*: $CIRCLE_PROJECT_REPONAME" 
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Branch*: $CIRCLE_BRANCH" 
+                    }
+                  ]
+                }
+              ]
+            }
+          event: always
+      - checkout
+      - run:
+          name: Log in to docker hub
+          command: |
+            docker login -u $DOCKER_USER -p $DOCKER_PASS
+      - run:
+          name: Install buildx
+          command: |
+            BUILDX_BINARY_URL="https://github.com/docker/buildx/releases/download/v0.4.2/buildx-v0.4.2.linux-amd64"
+            curl --output docker-buildx \
+              --silent --show-error --location --fail --retry 3 \
+              "$BUILDX_BINARY_URL"
+            mkdir -p ~/.docker/cli-plugins
+            mv docker-buildx ~/.docker/cli-plugins/
+            chmod a+x ~/.docker/cli-plugins/docker-buildx
+            docker buildx install
+            # Run binfmt
+            docker run --rm --privileged tonistiigi/binfmt:latest --install "$BUILDX_PLATFORMS"
+      - run:
+          name: Make Images via Buildx
+          command: |
+            BUILDX_PLATFORMS="$BUILDX_PLATFORMS" TAG="$CIRCLE_TAG" make cross-build
+      - slack/notify:
+          event: pass
+          template: basic_success_1
+      - slack/notify:
+          event: fail
+          template: basic_fail_1
+workflows:
+  version: 2
+  build-branch-dev:
+    jobs:
+      - build-dev:
+          context:
+            - docker-env
+            - slack
+          filters:
+            branches:
+              only: 
+                - dev
+  build-branch-master:
+    jobs:
+      - build-master:
+          context:
+            - docker-env
+            - slack
+          filters:
+            branches:
+              only: 
+                - master
+  build-branch-tags:
+    jobs:
+      - build-tags:
+          context:
+            - docker-env
+            - slack
+          filters:
+            tags:
+              only: 
+                - /^v.*/
+            branches:
+              ignore:
+                - /.*/

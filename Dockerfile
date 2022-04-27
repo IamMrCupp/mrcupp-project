@@ -3,7 +3,7 @@
 # build using a big os container
 FROM node AS base
 WORKDIR /tmp/website
-COPY ./package*.json .
+COPY ./package*.json /tmp/website/
 RUN npm install
 
 # make the container we will use for test/dev/etc
