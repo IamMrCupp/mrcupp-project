@@ -3,13 +3,10 @@ version: 2.1
 orbs:
   slack: circleci/slack@4.4.2
 jobs:
-  build-dev:
+  build-x86:
     machine:
-      image:  ubuntu-2004:202104-01
-      #docker_layer_caching: true   # this is a paid-for account feature :(
-    environment:
-      DOCKER_BUILDKIT: 1
-      BUILDX_PLATFORMS: linux/amd64,linux/arm64,linux/arm/v7
+      image: ubuntu-2004:202201-02
+    resource_class: medium
     steps:
       - slack/notify:
           custom: |
@@ -19,7 +16,7 @@ jobs:
                   "type": "header",
                   "text": {
                     "type": "plain_text",
-                    "text": "New Build Started!"
+                    "text": "New Build Started - x86_64 image"
                   },
                   "type": "section",
                   "fields": [
@@ -41,39 +38,22 @@ jobs:
             }
           event: always
       - checkout
-      - run:
-          name: Log in to docker hub
+      - deploy:
+          name: "Build and upload x86_64 image"
           command: |
-            docker login -u $DOCKER_USER -p $DOCKER_PASS
-      - run:
-          name: Install buildx
-          command: |
-            BUILDX_BINARY_URL="https://github.com/docker/buildx/releases/download/v0.4.2/buildx-v0.4.2.linux-amd64"
-            curl --output docker-buildx \
-              --silent --show-error --location --fail --retry 3 \
-              "$BUILDX_BINARY_URL"
-            mkdir -p ~/.docker/cli-plugins
-            mv docker-buildx ~/.docker/cli-plugins/
-            chmod a+x ~/.docker/cli-plugins/docker-buildx
-            docker buildx install
-            # Run binfmt
-            docker run --rm --privileged tonistiigi/binfmt:latest --install "$BUILDX_PLATFORMS"
-      - run:
-          name: Make Images via Buildx
-          command: |
-            BUILDX_PLATFORMS="$BUILDX_PLATFORMS" make cross-build-dev
+            docker build -t ghcr.io/${CIRCLECI_PROJECT_NAME}/${CIRCLE_PROJECT_REPONAME}:x86_64-${CIRCLE_SHA1} .
+            docker push ghcr.io/${CIRCLECI_PROJECT_NAME}/${CIRCLE_PROJECT_REPONAME}:x86_64-${CIRCLE_SHA1}
       - slack/notify:
           event: pass
           template: basic_success_1
       - slack/notify:
           event: fail
           template: basic_fail_1
-  build-master:
+
+  build-arm64:
     machine:
-      image:  ubuntu-2004:202104-01
-    environment:
-      DOCKER_BUILDKIT: 1
-      BUILDX_PLATFORMS: linux/amd64,linux/arm64,linux/arm/v7
+      image: ubuntu-2004:202201-02
+    resource_class: arm.medium
     steps:
       - slack/notify:
           custom: |
@@ -83,7 +63,7 @@ jobs:
                   "type": "header",
                   "text": {
                     "type": "plain_text",
-                    "text": "New Build Started!"
+                    "text": "New Build Started - arm64 image"
                   },
                   "type": "section",
                   "fields": [
@@ -105,39 +85,21 @@ jobs:
             }
           event: always
       - checkout
-      - run:
-          name: Log in to docker hub
+      - deploy:
+          name: "Build and upload arm64 image"
           command: |
-            docker login -u $DOCKER_USER -p $DOCKER_PASS
-      - run:
-          name: Install buildx
-          command: |
-            BUILDX_BINARY_URL="https://github.com/docker/buildx/releases/download/v0.4.2/buildx-v0.4.2.linux-amd64"
-            curl --output docker-buildx \
-              --silent --show-error --location --fail --retry 3 \
-              "$BUILDX_BINARY_URL"
-            mkdir -p ~/.docker/cli-plugins
-            mv docker-buildx ~/.docker/cli-plugins/
-            chmod a+x ~/.docker/cli-plugins/docker-buildx
-            docker buildx install
-            # Run binfmt
-            docker run --rm --privileged tonistiigi/binfmt:latest --install "$BUILDX_PLATFORMS"
-      - run:
-          name: Make Images via Buildx
-          command: |
-            BUILDX_PLATFORMS="$BUILDX_PLATFORMS" make cross-build-latest
+            docker build -t ghcr.io/${CIRCLECI_PROJECT_NAME}/${CIRCLE_PROJECT_REPONAME}:arm64-${CIRCLE_SHA1} .
+            docker push ghcr.io/${CIRCLECI_PROJECT_NAME}/${CIRCLE_PROJECT_REPONAME}:arm64-${CIRCLE_SHA1}
       - slack/notify:
           event: pass
           template: basic_success_1
       - slack/notify:
           event: fail
           template: basic_fail_1
-  build-tags:
-    machine:
-      image:  ubuntu-2004:202104-01
-    environment:
-      DOCKER_BUILDKIT: 1
-      BUILDX_PLATFORMS: linux/amd64,linux/arm64,linux/arm/v7
+
+  upload-manifest:
+    docker:
+      - image: cimg/python:3.8.2
     steps:
       - slack/notify:
           custom: |
@@ -147,7 +109,7 @@ jobs:
                   "type": "header",
                   "text": {
                     "type": "plain_text",
-                    "text": "New Build Started!"
+                    "text": "New Build Started - multiarch image creation"
                   },
                   "type": "section",
                   "fields": [
@@ -169,65 +131,30 @@ jobs:
             }
           event: always
       - checkout
-      - run:
-          name: Log in to docker hub
+      - deploy:
+          name: "Build and upload multiarch manifest for image"
           command: |
-            docker login -u $DOCKER_USER -p $DOCKER_PASS
-      - run:
-          name: Install buildx
-          command: |
-            BUILDX_BINARY_URL="https://github.com/docker/buildx/releases/download/v0.4.2/buildx-v0.4.2.linux-amd64"
-            curl --output docker-buildx \
-              --silent --show-error --location --fail --retry 3 \
-              "$BUILDX_BINARY_URL"
-            mkdir -p ~/.docker/cli-plugins
-            mv docker-buildx ~/.docker/cli-plugins/
-            chmod a+x ~/.docker/cli-plugins/docker-buildx
-            docker buildx install
-            # Run binfmt
-            docker run --rm --privileged tonistiigi/binfmt:latest --install "$BUILDX_PLATFORMS"
-      - run:
-          name: Make Images via Buildx
-          command: |
-            BUILDX_PLATFORMS="$BUILDX_PLATFORMS" TAG="$CIRCLE_TAG" make cross-build
+            set -eu
+            export DOCKER_CLI_EXPERIMENTAL=enabled
+            docker manifest create ghcr.io/${CIRCLECI_PROJECT_NAME}/${CIRCLE_PROJECT_REPONAME}:${CIRCLE_SHA1} \
+            ghcr.io/${CIRCLECI_PROJECT_NAME}/${CIRCLE_PROJECT_REPONAME}:x86_64-${CIRCLE_SHA1} \
+            ghcr.io/${CIRCLECI_PROJECT_NAME}/${CIRCLE_PROJECT_REPONAME}:arm64-${CIRCLE_SHA1}
+            docker push ghcr.io/${CIRCLECI_PROJECT_NAME}/${CIRCLE_PROJECT_REPONAME}:${CIRCLE_SHA1}
       - slack/notify:
           event: pass
           template: basic_success_1
       - slack/notify:
           event: fail
           template: basic_fail_1
-workflows:
+
+
+workflow:
   version: 2
-  build-branch-dev:
+  deploy:
     jobs:
-      - build-dev:
-          context:
-            - docker-env
-            - slack
-          filters:
-            branches:
-              only: 
-                - dev
-  build-branch-master:
-    jobs:
-      - build-master:
-          context:
-            - docker-env
-            - slack
-          filters:
-            branches:
-              only: 
-                - master
-  build-branch-tags:
-    jobs:
-      - build-tags:
-          context:
-            - docker-env
-            - slack
-          filters:
-            tags:
-              only: 
-                - /^v.*/
-            branches:
-              ignore:
-                - /.*/
+      - build-arm64
+      - build-x86
+      - upload-manifest:
+          requires:
+            - build-arm64
+            - build-x86
