@@ -38,6 +38,10 @@ jobs:
             }
           event: always
       - checkout
+      - run:
+          name: Log in to github container repo (ghcr.io)
+          command: |
+            docker login ghcr.io -u iammrcupp -p $GITHUB_TOKEN
       - deploy:
           name: "Build and upload x86_64 image"
           command: |
@@ -84,6 +88,10 @@ jobs:
             }
           event: always
       - checkout
+      - run:
+          name: Log in to github container repo (ghcr.io)
+          command: |
+            docker login ghcr.io -u iammrcupp -p $GITHUB_TOKEN
       - deploy:
           name: "Build and upload arm64 image"
           command: |
@@ -129,6 +137,10 @@ jobs:
             }
           event: always
       - checkout
+      - run:
+          name: Log in to github container repo (ghcr.io)
+          command: |
+            docker login ghcr.io -u iammrcupp -p $GITHUB_TOKEN
       - deploy:
           name: "Build and upload multiarch manifest for image"
           command: |
