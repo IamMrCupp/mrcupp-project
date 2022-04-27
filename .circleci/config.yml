@@ -148,9 +148,21 @@ workflow:
   version: 2
   deploy:
     jobs:
-      - build-arm64
-      - build-x86
+      - build-arm64:
+          context:
+            - docker-env
+            - slack
+            - github
+      - build-x86:
+          context:
+            - docker-env
+            - slack
+            - github
       - upload-manifest:
+          context:
+            - docker-env
+            - slack
+            - github
           requires:
             - build-arm64
             - build-x86
