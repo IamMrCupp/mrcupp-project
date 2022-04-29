@@ -14,7 +14,7 @@ jobs:
             echo "Circle Tag: $CIRCLE_TAG"
             echo "Circle Sha1: $CIRCLE_SHA1"
 
-            if [ $CIRCLE_TAG != "" ]; then 
+            if [ -n "$CIRCLE_TAG" ]; then 
               echo "Found CIRCLE_TAG env var! Using CIRCLE_TAG for BUILD_TAG"
               echo 'export $BUILD_TAG=$CIRCLE_TAG' >> $BASH_ENV 
             else
@@ -79,7 +79,7 @@ jobs:
             echo "Circle Tag: $CIRCLE_TAG"
             echo "Circle Sha1: $CIRCLE_SHA1"
 
-            if [ $CIRCLE_TAG != "" ]; then 
+            if [ -n "$CIRCLE_TAG" ]; then 
               echo "Found CIRCLE_TAG env var! Using CIRCLE_TAG for BUILD_TAG"
               echo 'export $BUILD_TAG=$CIRCLE_TAG' >> $BASH_ENV 
             else
@@ -144,7 +144,7 @@ jobs:
             echo "Circle Tag: $CIRCLE_TAG"
             echo "Circle Sha1: $CIRCLE_SHA1"
 
-            if [ $CIRCLE_TAG != "" ]; then 
+            if [ -n "$CIRCLE_TAG" ]; then 
               echo "Found CIRCLE_TAG env var! Using CIRCLE_TAG for BUILD_TAG"
               echo 'export $BUILD_TAG=$CIRCLE_TAG' >> $BASH_ENV 
             else
