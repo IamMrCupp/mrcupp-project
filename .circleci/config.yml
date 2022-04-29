@@ -207,7 +207,7 @@ workflows:
           requires:
             - build-arm64
             - build-x86
-    build-tags:
+  build-tags:
     jobs:
       - build-arm64:
           filters:
