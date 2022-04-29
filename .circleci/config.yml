@@ -8,6 +8,14 @@ jobs:
       image: ubuntu-2004:202201-02
     resource_class: medium
     steps:
+      - run:
+          name: Setup Environment Variables
+          command: |
+            if [ -z "${CIRCLE_TAG}" ]; then 
+              $BUILD_TAG = $CIRCLE_TAG
+            else
+              $BUILD_TAG = $CIRCLE_SHA1
+            fi
       - slack/notify:
           custom: |
             {
@@ -45,8 +53,8 @@ jobs:
       - deploy:
           name: "Build and upload x86_64 image"
           command: |
-            docker build -t ghcr.io/iammrcupp/${CIRCLE_PROJECT_REPONAME}:x86_64-${CIRCLE_SHA1} .
-            docker push ghcr.io/iammrcupp/${CIRCLE_PROJECT_REPONAME}:x86_64-${CIRCLE_SHA1}
+            docker build -t ghcr.io/iammrcupp/${CIRCLE_PROJECT_REPONAME}:x86_64-${BUILD_TAG} .
+            docker push ghcr.io/iammrcupp/${CIRCLE_PROJECT_REPONAME}:x86_64-${BUILD_TAG}
       - slack/notify:
           event: pass
           template: basic_success_1
@@ -58,6 +66,14 @@ jobs:
       image: ubuntu-2004:202201-02
     resource_class: arm.medium
     steps:
+      - run:
+          name: Setup Environment Variables
+          command: |
+            if [ -z "${CIRCLE_TAG}" ]; then 
+              $BUILD_TAG = $CIRCLE_TAG
+            else
+              $BUILD_TAG = $CIRCLE_SHA1
+            fi
       - slack/notify:
           custom: |
             {
@@ -95,8 +111,8 @@ jobs:
       - deploy:
           name: "Build and upload arm64 image"
           command: |
-            docker build -t ghcr.io/iammrcupp/${CIRCLE_PROJECT_REPONAME}:arm64-${CIRCLE_SHA1} .
-            docker push ghcr.io/iammrcupp/${CIRCLE_PROJECT_REPONAME}:arm64-${CIRCLE_SHA1}
+            docker build -t ghcr.io/iammrcupp/${CIRCLE_PROJECT_REPONAME}:arm64-${BUILD_TAG} .
+            docker push ghcr.io/iammrcupp/${CIRCLE_PROJECT_REPONAME}:arm64-${BUILD_TAG}
       - slack/notify:
           event: pass
           template: basic_success_1
@@ -108,6 +124,14 @@ jobs:
       image: ubuntu-2004:202201-02
     resource_class: medium
     steps:
+      - run:
+          name: Setup Environment Variables
+          command: |
+            if [ -z "${CIRCLE_TAG}" ]; then 
+              $BUILD_TAG = $CIRCLE_TAG
+            else
+              $BUILD_TAG = $CIRCLE_SHA1
+            fi
       - slack/notify:
           custom: |
             {
@@ -147,14 +171,17 @@ jobs:
           command: |
             set -eu
             export DOCKER_CLI_EXPERIMENTAL=enabled
-            docker manifest create ghcr.io/iammrcupp/${CIRCLE_PROJECT_REPONAME}:${CIRCLE_SHA1} ghcr.io/iammrcupp/${CIRCLE_PROJECT_REPONAME}:x86_64-${CIRCLE_SHA1} ghcr.io/iammrcupp/${CIRCLE_PROJECT_REPONAME}:arm64-${CIRCLE_SHA1}
-            docker manifest push ghcr.io/iammrcupp/${CIRCLE_PROJECT_REPONAME}:${CIRCLE_SHA1}
+            docker manifest create ghcr.io/iammrcupp/${CIRCLE_PROJECT_REPONAME}:${BUILD_TAG} ghcr.io/iammrcupp/${CIRCLE_PROJECT_REPONAME}:x86_64-${BUILD_TAG} ghcr.io/iammrcupp/${CIRCLE_PROJECT_REPONAME}:arm64-${BUILD_TAG}
+            docker manifest push ghcr.io/iammrcupp/${CIRCLE_PROJECT_REPONAME}:${BUILD_TAG}
       - slack/notify:
           event: pass
           template: basic_success_1
       - slack/notify:
           event: fail
           template: basic_fail_1
+
+
+
 workflows:
   version: 2
   build:
