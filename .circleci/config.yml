@@ -207,3 +207,32 @@ workflows:
           requires:
             - build-arm64
             - build-x86
+    build-tags:
+    jobs:
+      - build-arm64:
+          filters:
+            tags:
+              only: /^v.*/
+          context:
+            - docker-env
+            - slack
+            - github
+      - build-x86:
+          filters:
+            tags:
+              only: /^v.*/
+          context:
+            - docker-env
+            - slack
+            - github
+      - upload-manifest:
+          filters:
+            tags:
+              only: /^v.*/
+          context:
+            - docker-env
+            - slack
+            - github
+          requires:
+            - build-arm64
+            - build-x86
