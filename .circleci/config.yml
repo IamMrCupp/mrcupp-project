@@ -12,8 +12,10 @@ jobs:
           name: Setup Environment Variables
           command: |
             if [ -z "${CIRCLE_TAG}" ]; then 
+              echo "Found CIRCLE_TAG env var! Using CIRCLE_TAG for BUILD_TAG"
               echo 'export $BUILD_TAG=$CIRCLE_TAG' >> $BASH_ENV 
             else
+              echo "Could not find CIRCLE_TAG env var! Using SHA1 for BUILD_TAG"
               echo 'export $BUILD_TAG=$CIRCLE_SHA1' >> $BASH_ENV
             fi
             source $BASH_ENV
@@ -71,10 +73,13 @@ jobs:
           name: Setup Environment Variables
           command: |
             if [ -z "${CIRCLE_TAG}" ]; then 
-              $BUILD_TAG = $CIRCLE_TAG
+              echo "Found CIRCLE_TAG env var! Using CIRCLE_TAG for BUILD_TAG"
+              echo 'export $BUILD_TAG=$CIRCLE_TAG' >> $BASH_ENV 
             else
-              $BUILD_TAG = $CIRCLE_SHA1
+              echo "Could not find CIRCLE_TAG env var! Using SHA1 for BUILD_TAG"
+              echo 'export $BUILD_TAG=$CIRCLE_SHA1' >> $BASH_ENV
             fi
+            source $BASH_ENV
       - slack/notify:
           custom: |
             {
@@ -129,8 +134,10 @@ jobs:
           name: Setup Environment Variables
           command: |
             if [ -z "${CIRCLE_TAG}" ]; then 
+              echo "Found CIRCLE_TAG env var! Using CIRCLE_TAG for BUILD_TAG"
               echo 'export $BUILD_TAG=$CIRCLE_TAG' >> $BASH_ENV 
             else
+              echo "Could not find CIRCLE_TAG env var! Using SHA1 for BUILD_TAG"
               echo 'export $BUILD_TAG=$CIRCLE_SHA1' >> $BASH_ENV
             fi
             source $BASH_ENV
