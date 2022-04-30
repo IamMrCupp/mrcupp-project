@@ -213,6 +213,8 @@ workflows:
           filters:
             tags:
               only: /^v.*/
+            branches:
+              ignore: /.*/
           context:
             - docker-env
             - slack
@@ -221,6 +223,8 @@ workflows:
           filters:
             tags:
               only: /^v.*/
+            branches:
+              ignore: /.*/
           context:
             - docker-env
             - slack
@@ -229,6 +233,8 @@ workflows:
           filters:
             tags:
               only: /^v.*/
+            branches:
+              ignore: /.*/
           context:
             - docker-env
             - slack

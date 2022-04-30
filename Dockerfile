@@ -20,6 +20,6 @@ LABEL org.opencontainers.image.description "Website Container for mrcupp.com"
 LABEL org.opencontainers.image.title "mrcupp-project"
 LABEL org.opencontainers.image.revision "4"
 LABEL org.opencontainers.image.created "2022-04-29"
-LABEL org.opencontainers.image.author "Aaron Cupp [mrcupp@mrcupp.com]""
+LABEL org.opencontainers.image.author "Aaron Cupp [mrcupp@mrcupp.com]"
 LABEL org.opencontainers.image.homepage "https://mrcupp.com"
 COPY --from=src  /tmp/website /usr/share/nginx/html
