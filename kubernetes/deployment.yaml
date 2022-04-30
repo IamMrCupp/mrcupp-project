@@ -1,6 +1,10 @@
 # Deployment File
 # - domain:  mrcupp.com
 # - purpose: website
+#
+#
+# NOTE:  This requires a secret to be in place on the node for image pull from ghcr.io
+#  -  kubectl create secret docker-registry ghcr-pull --docker-server=https://ghcr.io --docker-username=mygithubusername --docker-password=mygithubreadtoken --docker-email=mygithubemail
 
 # setup the namespace
 apiVersion: v1
@@ -31,7 +35,7 @@ spec:
     spec:
       containers:
         - name: mrcupp-website
-          image: iammrcupp/mrcupp-project:v1.2.0
+          image: ghcr.io/iammrcupp/mrcupp-project:v1.2.0
           imagePullPolicy: Always
           ports:
             - containerPort: 80

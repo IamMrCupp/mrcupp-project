@@ -183,8 +183,6 @@ jobs:
           event: fail
           template: basic_fail_1
 
-
-
 workflows:
   version: 2
   build:
@@ -213,6 +211,8 @@ workflows:
           filters:
             tags:
               only: /^v.*/
+            branches:
+              ignore: /.*/
           context:
             - docker-env
             - slack
@@ -221,6 +221,8 @@ workflows:
           filters:
             tags:
               only: /^v.*/
+            branches:
+              ignore: /.*/
           context:
             - docker-env
             - slack
@@ -229,6 +231,8 @@ workflows:
           filters:
             tags:
               only: /^v.*/
+            branches:
+              ignore: /.*/
           context:
             - docker-env
             - slack
