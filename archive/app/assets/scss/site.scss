@@ -1,0 +1,103 @@
+// file: site.scss
+//  - master file for SASS compiled assests
+
+// Bootstrap 5 via npm
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+// Font-Awesome via npm
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+
+// bring in the custom variables and mixins
+@import './variables';
+@import './mixins';
+
+
+// create a new font-family for use on the site
+@font-face {
+    font-family: Futura-Bold;
+    src: url(../fonts/Futura-Bold.otf);
+}
+
+// override the defaults for a few things
+h1,h2,h3,h4 {
+    font-family: Hack;
+}
+
+p {
+    font-family: Hack;
+}
+
+// create some new classes
+.social-button {
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+.social-button-facebook {
+    color: $facebook_blue;
+}
+
+.social-button-instagram {
+    color: $instagram_pink;
+}
+
+.social-button-linkedin {
+    color: $linkedin_blue;
+}
+
+.social-button-github {
+    color: $github_brown;
+}
+
+.social-button-soundcloud {
+    color: $soundcloud_orange;
+}
+
+.esp-logo {
+    width: 20%;
+    height: 20%;
+}
+
+.logo-footer {
+    height: 4.0rem;
+}
+
+.logo-header {
+    height: 4.0rem;
+    vertical-align: middle;
+    
+}
+
+.site-container {
+    background-color: #a4cef8;
+}
+
+.site-container-text {
+    font-family: Hack;
+}
+
+.site-footer {
+    background-color: #a4f8c4;
+}
+
+.site-footer-text {
+    font-family: Hack;
+}
+
+.site-header {
+    background-color: #3ca04c;
+}
+
+.site-header-text {
+    font-family: Hack;
+}
+
+.site-header-icon {
+    size: 5x
+}
+.site-navigation {
+    background-color: #a0803c;
+}
+
+.footer {
+    font-family: Hack;
+}
