@@ -47,6 +47,9 @@ jobs:
             }
           event: always
       - checkout
+          post: 
+            - git submodule init
+            - git submodule update
       - run:
           name: Log in to github container repo (ghcr.io)
           command: |
@@ -106,6 +109,9 @@ jobs:
             }
           event: always
       - checkout
+          post: 
+            - git submodule init
+            - git submodule update
       - run:
           name: Log in to github container repo (ghcr.io)
           command: |
@@ -165,6 +171,9 @@ jobs:
             }
           event: always
       - checkout
+          post: 
+            - git submodule init
+            - git submodule update
       - run:
           name: Log in to github container repo (ghcr.io)
           command: |
