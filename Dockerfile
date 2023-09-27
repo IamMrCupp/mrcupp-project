@@ -4,7 +4,7 @@
 #####################################################################
 FROM hugomods/hugo:exts as builder
 # Base URL
-ARG HUGO_BASEURL=
+ARG HUGO_BASEURL='https://mrcupp.com/'
 ENV HUGO_BASEURL=${HUGO_BASEURL}
 # Build site
 COPY . /src
