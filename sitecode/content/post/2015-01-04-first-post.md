@@ -25,7 +25,8 @@ We're using a number of technologies on this site at the moment:
 
 ### Website:
 * hugo page generator
-* bootstrap
+* beautiful hugo theme
+* bootstrap js
 * fontawesome
 * DART SASS
   
