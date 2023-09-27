@@ -1,4 +1,4 @@
-baseurl = "https://mrcupp.com"
+baseurl = "//mrcupp.com"
 DefaultContentLanguage = "en"
 title = "IamMrCupp"
 theme = "beautifulhugo"
