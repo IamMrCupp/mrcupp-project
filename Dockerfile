@@ -17,7 +17,7 @@ RUN hugo --minify --gc --enableGitInfo --source ./sitecode/
 #####################################################################
 # [testing image build]
 FROM hugomods/hugo:nginx AS test
-COPY --from=builder /src/public /site
+COPY --from=builder /src/sitecode/public /site
 
 
 # [production image build]
@@ -29,4 +29,4 @@ LABEL org.opencontainers.image.created "2023-09-26"
 LABEL org.opencontainers.image.author "IamMrCupp [mrcupp@mrcupp.com]"
 LABEL org.opencontainers.image.homepage "https://mrcupp.com"
 LABEL org.opencontainers.image.source "https://github.com/IamMrCupp/mrcupp-project"
-COPY --from=builder /src/public /site
+COPY --from=builder /src/sitecode/public /site
