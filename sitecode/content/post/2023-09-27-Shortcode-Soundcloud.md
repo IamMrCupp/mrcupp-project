@@ -22,7 +22,7 @@ You will need to create a shortcode file in the proper location:
 
 ### use shortcode
 To use this in your markdown for the page you will need to do the following:
-{{< highlightt markdown >}}
+{{< highlight markdown >}}
     {{< soundcloud 1342914016 >}}
 {{</ highlight >}}
 'soundcloud' is the name for the shortcode and it takes in exactly 1 param at the moment.  This param is the playlist ID from soundcloud that you would like to embed into the post.  Example as shown will load the same interface that is one my [Music](htttps://mrcupp.com/page/music/) page
