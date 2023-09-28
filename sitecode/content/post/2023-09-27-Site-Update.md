@@ -1,6 +1,7 @@
 ---
 title: Site Update
 date: 2023-09-27
+tags: [ "website", "site update" ]
 ---
 
 # More Updates!   
