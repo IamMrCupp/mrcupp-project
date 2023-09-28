@@ -83,19 +83,24 @@ pygmentsCodefencesGuessSyntax = true
     weight = 1
 
 [[menu.main]]
+    name = "Music"
+    url = "page/music/"
+    weight = 2
+
+[[menu.main]]
     name = "Resume/CV"
     url = "page/resume/"
-    weight = 2
+    weight = 3
 
 [[menu.main]]
     name = "Blog"
     url = "post/"
-    weight = 3
+    weight = 4
 
 [[menu.main]]
     identifier = "projects"
     name = "Projects"
-    weight = 4
+    weight = 5
 
 [[menu.main]]
     parent = "projects"
@@ -112,4 +117,4 @@ pygmentsCodefencesGuessSyntax = true
 [[menu.main]]
     name = "Tags"
     url = "tags"
-    weight = 5
+    weight = 6
