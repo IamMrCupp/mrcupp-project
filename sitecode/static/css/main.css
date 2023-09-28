@@ -388,6 +388,7 @@ footer div.disclaimer {
   border-right-color: #f1c40f;
   font-family: 'Hack', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
+  color: #181818;
 }
 
 @media only screen and (min-width: 768px) {
