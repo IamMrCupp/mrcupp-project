@@ -91,7 +91,7 @@ Cymbals:
 - Meinl Byzance Equalibrium China - 20"
 - Meinl Byzance Dark Splash - 8"
 - Meinl Byzance Traditional Splash - 10"
-- Meinl Classic Custom 
+- Meinl Thomas Lang Artist Concept Super Stack 
 
 Accessories:
 - ProMark Sticks
