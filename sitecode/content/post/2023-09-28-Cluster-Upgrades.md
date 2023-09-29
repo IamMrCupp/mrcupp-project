@@ -1,5 +1,5 @@
 ---
-title: "2023 09 28 Cluster Upgrades"
+title: "Cluster Upgrades"
 subtitle: "upgrading k8s on my rpi cluster"
 date: 2023-09-28T15:41:30-07:00
 tags: [ "k8s", "rasbian", "upgrades" ,"walkthrough" ]
