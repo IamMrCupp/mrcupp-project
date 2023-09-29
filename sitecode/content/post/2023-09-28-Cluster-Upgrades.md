@@ -39,114 +39,127 @@ System Specs:
 - amd64 
 
 
+## Pre-Reqs for Update
+
+- Ensure that the GPGKEY is up to dat for k8s repo
+  ```bash
+  curl -4 -sL https://dl.k8s.io/apt/doc/apt-key.gpg | sudo apt-key add -
+  ```
+- Ensure that all nodes have the proper CNI annotations (use a method that is comfortable to you)
+  ```yaml
+  metadata:
+    annotations:
+        kubeadm.alpha.kubernetes.io/cri-socket: unix:///run/containerd/containerd.sock
+  ```
 ## Updates
 
 Note: Keep in mind that we are using the `apt-mark hold` command to lock/pin various packages
 
 
 ## Upgrade the master node(s)
-Bring the local apt cache up to date
-```bash
-sudo apt update
-```
 
-Lookup the latest patch version
-```bash
-sudo apt-cache madison kubeadm
-```
+- Bring the local apt cache up to date
+    ```bash
+    sudo apt update
+    ```
 
-Install the new version of the kubernetes admin cli too
-```bash
-# replace x in 1.25.x-00 with the latest patch version
-sudo apt-mark unhold kubeadm && \
-sudo apt-get update && sudo apt-get install -y kubeadm=1.25.x-00 && \
-sudo apt-mark hold kubeadm
-```
+- Lookup the latest patch version
+    ```bash
+    sudo apt-cache madison kubeadm
+    ```
 
-Verify that we installed the proper version of things
-```bash
-kubeadm version
-```
+- Install the new version of the kubernetes admin cli too
+    ```bash
+    # replace x in 1.25.x-00 with the latest patch version
+    sudo apt-mark unhold kubeadm && \
+    sudo apt-get update && sudo apt-get install -y kubeadm=1.25.x-00 && \
+    sudo apt-mark hold kubeadm
+    ```
 
-Verify the upgrade plan for the kubernetes node
-```bash
-kubeadm upgrade plan
-```
+- Verify that we installed the proper version of things
+    ```bash
+    kubeadm version
+    ```
 
-Upgrade to your version
-```bash
-# replace x with the patch version you picked earlier in the process
-sudo kubeadm upgrade apply v1.25.x
-```
+- Verify the upgrade plan for the kubernetes node
+    ```bash
+    kubeadm upgrade plan
+    ```
 
-Drain the master node from your desktop cli
-```bash
-# replace <node-to-drain> with the name of your node you are draining
-kubectl cordon <node_to_drain>
-kubectl drain <node_to_drain> --ignore-daemonsets
-```
+- Upgrade to your version
+    ```bash
+    # replace x with the patch version you picked earlier in the process
+    sudo kubeadm upgrade apply v1.25.x
+    ```
 
-Upgrade kubelet and kubectl on node
-```bash
-# replace x in 1.25.x-00 with the latest patch version
-apt-mark unhold kubelet kubectl && \
-apt-get update && apt-get install -y kubelet=1.25.x-00 kubectl=1.25.x-00 && \
-apt-mark hold kubelet kubectl
-```
+- Drain the master node from your desktop cli
+    ```bash
+    # replace <node-to-drain> with the name of your node you are draining
+    kubectl cordon <node_to_drain>
+    kubectl drain <node_to_drain> --ignore-daemonsets
+    ```
 
-Restart the kubelet
-```bash
-sudo systemctl daemon-reload
-sudo systemctl restart kubelet
-```
+- Upgrade kubelet and kubectl on node
+    ```bash
+    # replace x in 1.25.x-00 with the latest patch version
+    apt-mark unhold kubelet kubectl && \
+    apt-get update && apt-get install -y kubelet=1.25.x-00 kubectl=1.25.x-00 && \
+    apt-mark hold kubelet kubectl
+    ```
 
-Uncordon the node
-```bash
-# replace <node-to-uncordon> with the name of your node
-kubectl uncordon <node-to-uncordon>
-```
+- Restart the kubelet
+    ```bash
+    sudo systemctl daemon-reload
+    sudo systemctl restart kubelet
+    ```
+
+- Uncordon the node
+    ```bash
+    # replace <node-to-uncordon> with the name of your node
+    kubectl uncordon <node-to-uncordon>
+    ```
 
 
 ## Upgrade the worker node(s)
 
 Same process as the master nodes, just this time it is on the worker nodes.
 
-Upgrade kubeadm first
-```bash
-# replace x in 1.25.x-00 with the latest patch version
-apt-mark unhold kubeadm && \
-apt-get update && apt-get install -y kubeadm=1.25.x-00 && \
-apt-mark hold kubeadm
-```
+- Upgrade kubeadm first
+    ```bash
+    # replace x in 1.25.x-00 with the latest patch version
+    apt-mark unhold kubeadm && \
+    apt-get update && apt-get install -y kubeadm=1.25.x-00 && \
+    apt-mark hold kubeadm
+    ```
 
-run the upgrade process
-```bash
-sudo kubeadm upgrade node
-```
+- run the upgrade process
+    ```bash
+    sudo kubeadm upgrade node
+    ```
 
-Drain the node
-```bash
-# replace <node-to-drain> with the name of your node you are draining
-kubectl cordon <node-to-drain>
-kubectl drain <node-to-drain> --ignore-daemonsets
-```
+- Drain the node
+    ```bash
+    # replace <node-to-drain> with the name of your node you are draining
+    kubectl cordon <node-to-drain>
+    kubectl drain <node-to-drain> --ignore-daemonsets
+    ```
 
-Restart kubelet
-```bash
-sudo systemctl daemon-reload
-sudo systemctl restart kubelet
-```
+- Restart kubelet
+    ```bash
+    sudo systemctl daemon-reload
+    sudo systemctl restart kubelet
+    ```
 
-Uncordon node
-```bash
-# replace <node-to-uncordon> with the name of your node
-kubectl uncordon <node-to-uncordon>
-```
+- Uncordon node
+    ```bash
+    # replace <node-to-uncordon> with the name of your node
+    kubectl uncordon <node-to-uncordon>
+    ```
 
 
 ## Verify Upgrade
 
-Check that things finished without issues.  Nodes should all report the same version of k8s
-```bash
-kubectl get nodes -o wide
-```
+- Check that things finished without issues.  Nodes should all report the same version of k8s
+    ```bash
+    kubectl get nodes -o wide
+    ```
