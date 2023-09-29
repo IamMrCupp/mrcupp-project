@@ -1,11 +1,9 @@
 ---
 title: "2023 09 28 Cluster Upgrades"
 subtitle: "upgrading k8s on my rpi cluster"
-author: "Aaron Cupp"
-type: "walkthrough"
 date: 2023-09-28T15:41:30-07:00
-bigimg: [{src: "/img/rpikube.png", desc: "RPiKube"}]
 tags: [ "k8s", "rasbian", "upgrades" ,"walkthrough" ]
+bigimg: [{src: "/img/rpikube.png", desc: "RPiKube"}]
 ---
 
 # Cluster Upgrade Work
