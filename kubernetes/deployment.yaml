@@ -35,7 +35,7 @@ spec:
     spec:
       containers:
         - name: mrcupp-website
-          image: ghcr.io/iammrcupp/mrcupp-project:2d875dd7657f26603b31ca87ce17cb8ff6696f73
+          image: ghcr.io/iammrcupp/mrcupp-project:16e76eb6e2b63e2c08d8410c48a5cb2bad1dee7e
           imagePullPolicy: Always
           ports:
             - containerPort: 80
