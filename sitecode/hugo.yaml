@@ -1,0 +1,79 @@
+baseurl: 'https://mrcupp.com'
+DefaultContentLanguage: en
+title: IamMrCupp
+theme: beautifulhugo
+pygmentsStyle: trac
+pygmentsUseClasses: true
+pygmentsCodeFences: true
+pygmentsCodefencesGuessSyntax: true
+enableEmoji: true
+enableGitInfo: true
+
+module:
+  imports:
+    - path: github.com/IamMrCupp/hugo-shortcodes
+      disabled: "false"
+      mounts:
+        - source: "layouts/shortcodes/"
+          target: "layouts/shortcodes/"
+
+Params:
+  homeTitle: I am MrCupp
+  subtitle: Personal Website for Aaron Cupp
+  mainSections:
+    - post
+    - posts
+  logo: img/mrcupp-logo.png
+  favicon: img/favicon.ico
+  dateFormat: 'January 2, 2006'
+  commit: 'https://github.com/IamMrCupp/mrcupp-project/tree/'
+  rss: true
+  comments: true
+  readingTime: true
+  wordCount: true
+  useHLJS: true
+  socialShare: true
+  selfHosted: true
+  delayDisqus: true
+  showRelatedPosts: true
+  copyright: 'CC BY-SA '
+  disclaimerText: >-
+    The opinions expressed herein are my own personal opinions and do not
+    represent my employer’s view in any way.
+
+Author:
+  name: Aaron Cupp
+  email: mrcupp@mrcupp.com
+  github: iammrcupp
+  linkedin: mrcupp
+  instagram: iammrcupp
+  soundcloud: mrcupp
+
+menu:
+  main:
+    - name: About
+      url: page/about/
+      weight: 1
+    - name: Music & VJing
+      url: page/music/
+      weight: 2
+    - name: Resume/CV
+      url: page/resume/
+      weight: 3
+    - name: Blog
+      url: post/
+      weight: 4
+    - identifier: projects
+      name: Projects
+      weight: 5
+    - parent: projects
+      name: Tech-Noid Systems
+      url: page/tech-noid-systems
+      weight: 1
+    - parent: projects
+      name: Emotional Support Pizza
+      url: page/emotional-support-pizza
+      weight: 2
+    - name: Tags
+      url: tags
+      weight: 6
