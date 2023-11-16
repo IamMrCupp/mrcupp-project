@@ -14,12 +14,12 @@ Results-driven Infrastructure & Site Reliability Engineering Manager with a dive
 
 ## Experience
 **[SRE Manager, Sight Machine - San Francisco, CA (Remote Position)  2021- 2023](https://sightmachine.com)**
-* Promoted to Manager of SRE in November 2021.
 * Member of Company Security Response Team and Engineering Technology Leads Team.
-* Built and managed a team of 6 SRE professionals, ensuring 24/7 coverage across multiple time zones.
-* Advocated for Infra-As-Code and GitOps practices, driving the adoption of related technologies within the team.
+* Interviewed, Hired and Mentored a Full-time team of 3 SRE and 1 Front End Developer. Team was responsible for all aspects of infrastructure management and orchestration for multi-customer Kubernetes based SaaS application.
+* Managed a remote/offshore team of 6 SRE professionals, ensuring 24/7 coverage across multiple time zones.
 * Coached team members on Terraform, cloud environments, scripting, documentation changes, and on-call processes.
-* Developed and implemented standardized processes for SRE onboarding and on-call responsibilities.
+* Developed and implemented SOP for SRE onboarding, on-call process, runbook creation, Incident Response and Change Request Management.
+* Advocated for Infra-As-Code and GitOps practices, driving the adoption of related technologies within the team.
 * Implemented processes that resulted in achieving 99.98+% uptime in production environments.
 * Recognized with the Golden Gear patch for saving the company $5000/month on infrastructure bills.
 
