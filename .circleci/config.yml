@@ -1,4 +1,4 @@
-# config for mrcupp-project circleci
+# config for mrcupp-project circleci -- https://circleci.com/gh/IamMrCupp/mrcupp-project
 version: 2.1
 
 orbs:
