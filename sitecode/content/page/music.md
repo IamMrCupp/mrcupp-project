@@ -4,11 +4,9 @@ subtitle: Musical Hobbies and Such
 comments: false
 ---
 
-# I am MrCup
-    Halftime, Autonomic, Greyarea, Techno, Bass Music DJ
-    VJ
-    Sound Junkie
-    Drummer
+# IamMrCupp
+    Autonomic Halfime Drum and Bass, Greyarea DJ
+    Trumpet, Drums
 
 ## DJ Related Stuff
 I mix everything without planning using the following gear:
@@ -25,25 +23,20 @@ Recoding and Broadcast with the following additional gear:
 - OBS (twitch / yourtube video feeds)
   
 
-You can find my archives on SoundCloud.
-Here are some of my Recent Mixes:
+### Mix Archives:
+
+- Guest Mixes:
+    {{< soundcloud 1799137908 >}}
+
+- Tech-Noid Systems Mixes:
     {{< soundcloud 1342914016 >}}
 
-
-## VJ Stuff
-I have recently started learning how to program GLSL to get more into abstract geometric visualizations.
-I am using a mix of tools when performing.  My visuals at the moment have been seem on my wife's live streams for her bi-weekly drum and bass show.
-
-Current setup:
-- Apple Mac Mini
-- Resolume
-- Synethesia Live
-- Novation LaunchControl XL
-- Novation Grid Controller
+- Segmentation Fault Mixes:
+    {{< soundcloud 1799138304 >}}
 
 
 ## Sound Gear
-Our broadcast and production room houses all the DJ and VJ gear.  On top of that we have a dedicated setup for music production and mastering.  This can be used for live DJ broadcasts, live podcasts, recording podcasts and mixes, as well as music production, mixing and mastering.
+Our broadcast and production room houses all the DJ and VJ gear. On top of that we have a dedicated setup for music production and mastering. This can be used for live DJ broadcasts, live podcasts, recording podcasts and mixes, as well as music production, mixing and mastering.
 
 Monitor Controller
 - PreSonus MonitorStation V2
@@ -56,7 +49,7 @@ Music Production Monitoring:
 - Focal 
 
 ## Production & Mastering Gear
-We run a mix of hardware and software for our studio setup.   The entire DJ setup is in-chain with the items in the production area of the studio.
+We run a mix of hardware and software for our studio setup. The entire DJ setup is in-chain with the items in the production area of the studio.
 
 Production Gear:
 - Apple Mac Mini
@@ -70,7 +63,7 @@ Production Gear:
 - AKAI MPC One Workstation
 
 ## Drum Gear
-I have always been interested in drums.  I don't play near enough, but I have finally acquired the set I always wanted.
+I have always been interested in drums. I don't play near enough, but I have finally acquired the set I always wanted.
 
 Drums:
 - DW Design Series 5-piece in Cherry Stain

@@ -16,14 +16,16 @@ module:
       mounts:
         - source: "layouts/shortcodes/"
           target: "layouts/shortcodes/"
+    - path: github.com/halogenica/beautifulhugo
+      disabled: "false"
 
 Params:
-  homeTitle: I am MrCupp
+  homeTitle: IamMrCupp
   subtitle: Personal Website for Aaron Cupp
   mainSections:
     - post
     - posts
-  logo: img/mrcupp-logo.png
+  logo: img/iammrcupp-green-cyberpunk-game-style-800x800.png
   favicon: img/favicon.ico
   dateFormat: 'January 2, 2006'
   commit: 'https://github.com/IamMrCupp/mrcupp-project/tree/'
@@ -54,8 +56,16 @@ menu:
     - name: About
       url: page/about/
       weight: 1
-    - name: Music & VJing
+    - identifier: music-and-visuals
+      name: Music & VJing
+      weight: 2
+    - parent: music-and-visuals 
+      name: Music & DJing
       url: page/music/
+      weight: 1
+    - parent: music-and-visuals 
+      name: Visuals and VJing
+      url: page/visuals/
       weight: 2
     - name: Resume/CV
       url: page/resume/
