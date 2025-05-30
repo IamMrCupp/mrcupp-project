@@ -1,11 +1,13 @@
-# config for mrcupp-project circleci
+# config for mrcupp-project circleci -- https://circleci.com/gh/IamMrCupp/mrcupp-project
 version: 2.1
+
 orbs:
-  slack: circleci/slack@4.4.2
+  slack: circleci/slack@5.1.1
+
 jobs:
   build-x86:
     machine:
-      image: ubuntu-2004:202201-02
+      image: ubuntu-2404:2024.11.1
     resource_class: medium
     steps:
       - run:
@@ -47,11 +49,6 @@ jobs:
             }
           event: always
       - checkout
-      - run: 
-          name: "update git submodules"
-          command: |
-            git submodule init
-            git submodule update
       - run:
           name: Log in to github container repo (ghcr.io)
           command: |
@@ -67,13 +64,14 @@ jobs:
       - slack/notify:
           event: fail
           template: basic_fail_1
+  
   build-arm64:
     machine:
-      image: ubuntu-2004:202201-02
+      image: ubuntu-2404:2024.11.1
     resource_class: arm.medium
     steps:
       - run:
-          name: Setup Environment Variables
+          name: Setup Environment Variables 
           command: |
             if [ -n "$CIRCLE_TAG" ]; then 
               echo 'export BUILD_TAG=$CIRCLE_TAG' >> $BASH_ENV 
@@ -111,11 +109,6 @@ jobs:
             }
           event: always
       - checkout
-      - run: 
-          name: "update git submodules"
-          command: |
-            git submodule init
-            git submodule update
       - run:
           name: Log in to github container repo (ghcr.io)
           command: |
@@ -133,7 +126,7 @@ jobs:
           template: basic_fail_1
   upload-manifest:
     machine:
-      image: ubuntu-2004:202201-02
+      image: ubuntu-2404:2024.11.1
     resource_class: medium
     steps:
       - run:
@@ -175,11 +168,6 @@ jobs:
             }
           event: always
       - checkout
-      - run: 
-          name: "update git submodules"
-          command: |
-            git submodule init
-            git submodule update
       - run:
           name: Log in to github container repo (ghcr.io)
           command: |
