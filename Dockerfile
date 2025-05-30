@@ -8,11 +8,7 @@ ARG HUGO_BASEURL='https://mrcupp.com/'
 ENV HUGO_BASEURL=${HUGO_BASEURL}
 # Build site
 COPY . /src 
-RUN <<EOF 
-cd /src/sitecode/ && 
-hugo mod get &&
-hugo mod get -u 
-EOF
+RUN cd /src/sitecode/ && hugo mod get -u 
 RUN hugo --minify --gc --enableGitInfo --source ./sitecode/
 
 # Set the fallback 404 page if defaultContentLanguageInSubdir is enabled, please replace the `en` with your default language code.
