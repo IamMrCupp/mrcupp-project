@@ -2,7 +2,7 @@
 #####################################################################
 #                            Build Stage                            #
 #####################################################################
-FROM hugomods/hugo:exts as builder
+FROM hugomods/hugo:exts AS builder
 # Base URL
 ARG HUGO_BASEURL='https://mrcupp.com/'
 ENV HUGO_BASEURL=${HUGO_BASEURL}
