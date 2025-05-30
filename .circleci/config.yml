@@ -71,7 +71,7 @@ jobs:
     resource_class: arm.medium
     steps:
       - run:
-          name: Setup Environment Variables
+          name: Setup Environment Variables 
           command: |
             if [ -n "$CIRCLE_TAG" ]; then 
               echo 'export BUILD_TAG=$CIRCLE_TAG' >> $BASH_ENV 
