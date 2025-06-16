@@ -14,7 +14,7 @@ There are many custom shortcode generators in various places on the site. There 
 # checkout the repo
 gh repo clone iammrcupp/mrcupp-project
 
-# ensure the module are up-to-date
+# ensure the module are up-to-date - runs in sitecode directory
 cd mrcupp-project/sitecode
 hugo mod get -u ./...
 
