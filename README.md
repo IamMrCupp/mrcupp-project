@@ -2,26 +2,26 @@
 
 # MrCupp Website Project
 
-This is my personal website.
+This is my personal website.  
 
-It will likely go through a ton of iterations.
+This site is utilizing Hugo static pages for generation.  Pages are defined via Markdown.
+I am using custom shortcode generators in various places on the site.  There are likely some other custom hacks that I have done to the system to get what I need done in the framework.
 
-**The website uses the following technology:**
-- [![npm version](https://badge.fury.io/js/bootstrap.svg)](https://badge.fury.io/js/bootstrap)  bootstrap
-- [![npm version](https://badge.fury.io/js/%40fortawesome%2Ffontawesome-free.svg)](https://badge.fury.io/js/%40fortawesome%2Ffontawesome-free)  fontawesome
-- [![npm version](https://badge.fury.io/js/browser-sync.svg)](https://badge.fury.io/js/browser-sync)  browser-sync
-- [![npm version](https://badge.fury.io/js/gulp.svg)](https://badge.fury.io/js/gulp)  gulp
-- [![npm version](https://badge.fury.io/js/gulp-sass.svg)](https://badge.fury.io/js/gulp-sass)  gulp-sass
-- [![npm version](https://badge.fury.io/js/sass.svg)](https://badge.fury.io/js/sass) sass
-- [![npm version](https://badge.fury.io/js/node-sass.svg)](https://badge.fury.io/js/node-sass)  node-sass
-- Docker
-- GitHub
-- CircleCI
-- make
-- BuildKit for multiarch container builds
 
-Initial Setup:
-``` 
-npm install browser-sync gulp sass gulp-sass --save-dev
-npm install bootstrap --save
-npm install @fortawesome/fontawesome-free --save 
+Local Development:
+- You can work on things without having to build the local image. It requires just running a few commands:
+```
+# checkout the repo
+gh repo clone iammrcupp/mrcupp-project
+# ensure the module are up-to-date
+cd mrcupp-project/sitecode
+hugo mod get -u ./...
+# run the local server
+cd ..
+hugo server -D --minify --gc --enableGitInfo --source ./sitecode/
+```
+
+Production:
+- Container image generation is performed via CircleCI workflow
+- Package lives in ghcr.io
+- Rollout is managed via GitOps process using flux-cd for k8s
