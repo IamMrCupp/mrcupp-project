@@ -7,6 +7,7 @@ comments: false
 # IamMrCupp
     Autonomic Halfime Drum and Bass, Greyarea DJ
     Trumpet, Drums
+    Audio Recording and Mastering
 
 ## DJ Related Stuff
 I mix everything without planning using the following gear:
@@ -20,7 +21,7 @@ Recoding and Broadcast with the following additional gear:
 - Focusrite Scarlett 18i20
 - Apple Mac Mini M2
 - BUTT (for radio broadcast)
-- OBS (twitch / yourtube video feeds)
+- OBS (twitch / youtube video feeds)
   
 
 ### Mix Archives:
