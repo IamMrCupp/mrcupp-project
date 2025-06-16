@@ -62,11 +62,11 @@ menu:
     - parent: music-and-visuals 
       name: Music & DJing
       url: page/music/
-      weight: 1
+      weight: 2
     - parent: music-and-visuals 
       name: Visuals and VJing
       url: page/visuals/
-      weight: 2
+      weight: 1
     - name: Resume/CV
       url: page/resume/
       weight: 3
