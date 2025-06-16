@@ -20,7 +20,7 @@ Recoding and Broadcast with the following additional gear:
 - Focusrite Scarlett 18i20
 - Apple Mac Mini M2
 - BUTT (for radio broadcast)
-- OBS (twitch / yourtube video feeds)
+- OBS (twitch / youtube video feeds)
   
 
 ### Mix Archives:

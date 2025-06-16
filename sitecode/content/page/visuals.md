@@ -17,16 +17,19 @@ I specialized in audio reactive shader based visual projection using projection 
 
 ### Current Visual Gear:
 - Apple Macbook M4 Pro - 2024 Series (Visual System)
-- Apple Macbook Pro - 2019 Series (Laser/sACN System)
 - iPad - 2019 Series (TouchOSC Controller for Synesthesia)
-- APC40 MK2 (Laser Controller)
-- NeonCaptain Radiator
 - Focusrite Scarlett 4i4
+- Heavy M 
 - Synesthesia Live
-- Liberation Laser
 - Full TCP/IP Network (Wireless and Wired)
 - 100" Back-projection Screen
 - BenQ DLP Projector
+
+### Current Laser Projection Gear:
+- Apple Macbook Pro - 2019 Series (Laser/sACN System)
+- APC40 MK2 (Laser Controller)
+- NeonCaptain Radiator
+- Liberation Laser
 - X-Laser Skywriter 
 
 ### Current Audio/Video Gear
@@ -36,4 +39,7 @@ I specialized in audio reactive shader based visual projection using projection 
 
 
 ### Visual and Audio Portfolio
-- coming soon!
+- Trial Run @ TSR Flower Moon - I <3 D&B Record Release Party
+    {{< instagram DJmgI3DJqON >}}
+- Test Running Gear at Tech-Noid Systems
+    {{< instagram DEYwN_7vTvu >}}
