@@ -15,7 +15,7 @@ module:
       disabled: "false"
       mounts:
         - source: "layouts/shortcodes/"
-          target: "layouts/shortcodes/"
+          target: "layouts/_shortcodes/"
     - path: github.com/halogenica/beautifulhugo
       disabled: "false"
 
