@@ -5,23 +5,21 @@ comments: false
 ---
 
 # IamMrCupp
-    Autonomic Halfime Drum and Bass, Greyarea DJ
-    Trumpet, Drums
+    Autonomic Halfime D&B, Greyarea, 140-170bpm DJ
 
 ## DJ Related Stuff
 I mix everything without planning using the following gear:
+- Allen & Heath XONE:92 Mixer
 - 2x Pioneer CDJ-2000-NX2 
 - 2x Pioneer PLX-1000 Turntables
-- Allen & Heath XONE:92 Mixer
 
 Recoding and Broadcast with the following additional gear:
-- Rode Rodecaster Pro
-- 2x Rode Pod Mics
+- Rode Rodecaster Pro II
+- Rode Pod Mics
 - Focusrite Scarlett 18i20
 - Apple Mac Mini M2
 - BUTT (for radio broadcast)
 - OBS (twitch / youtube video feeds)
-  
 
 ### Mix Archives:
 
@@ -46,24 +44,26 @@ DJ Gear Monitoring:
 - Focal Solo 18" Subwoofer
 
 Music Production Monitoring:
-- Focal 
+- Focal Alpha50 Monitors
 
 ## Production & Mastering Gear
 We run a mix of hardware and software for our studio setup. The entire DJ setup is in-chain with the items in the production area of the studio.
 
 Production Gear:
-- Apple Mac Mini
+- Apple Mac Mini M2
 - BitWig Studio 5
+- Ableton 11
 - various VST for effects
 - various VST for instruments
 - Focusrite Scarlett 18i20 Interface (primary audio interface)
-- Rodecaster Pro (sound and microphone capture)
+- Rodecaster Pro II (sound and microphone capture)
 - iCON QCON Pro G2 Mixing Console
 - AKAI MPK225 Keyboard
 - AKAI MPC One Workstation
 
 ## Drum Gear
-I have always been interested in drums. I don't play near enough, but I have finally acquired the set I always wanted.
+I have always been interested in drums. 
+I don't play near enough, but I have finally acquired the set I always wanted.
 
 Drums:
 - DW Design Series 5-piece in Cherry Stain
