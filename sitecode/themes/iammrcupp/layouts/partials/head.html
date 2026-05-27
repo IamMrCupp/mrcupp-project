@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ with .Site.Params.subtitle }} · {{ . }}{{ end }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+{{ with .Description }}<meta name="description" content="{{ . }}">{{ else }}{{ with .Site.Params.subtitle }}<meta name="description" content="{{ . }}">{{ end }}{{ end }}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+{{ with .Site.Params.favicon }}<link rel="shortcut icon" href="{{ . | relURL }}">{{ end }}
+<link rel="stylesheet" href="{{ "css/theme.css" | relURL }}">
+{{ if .Site.Params.rss }}{{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ $.Site.Title }}">{{ end }}{{ end }}
+{{ block "head_extra" . }}{{ end }}

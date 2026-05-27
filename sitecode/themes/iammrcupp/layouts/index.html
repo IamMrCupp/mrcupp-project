@@ -1,0 +1,74 @@
+{{ define "main" }}
+
+{{/* ── HERO ── */}}
+<section class="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-content">
+    {{ with .Site.Params.logo }}
+    <img src="{{ . | relURL }}" alt="{{ $.Site.Title }}" class="hero-logo">
+    {{ end }}
+    <div class="hero-tag">// {{ with .Site.Params.subtitle }}{{ . }}{{ else }}Personal Website{{ end }}</div>
+    <p class="hero-sub">
+      Music · Visuals · Technology. DJ, VJ, and Site Reliability leader —
+      where the career and the hobbies keep overlapping.
+    </p>
+    <div class="hero-btns">
+      <a href="{{ "page/about/" | relURL }}" class="btn btn-solid">About Me</a>
+      <a href="{{ "post/" | relURL }}" class="btn">Read the Blog</a>
+    </div>
+  </div>
+</section>
+
+{{/* ── WHAT I DO ── */}}
+<section class="home-section">
+  <div class="section-wrap">
+    <div class="section-header">
+      <span class="section-label">// Explore</span>
+    </div>
+    <div class="card-grid">
+      <a href="{{ "page/music/" | relURL }}" class="nav-card">
+        <div class="nav-card-title"><span class="accent">&gt;</span> Music &amp; DJing</div>
+        <p>Sets, mixes, and the sounds I play out.</p>
+      </a>
+      <a href="{{ "page/visuals/" | relURL }}" class="nav-card">
+        <div class="nav-card-title"><span class="accent">&gt;</span> Visuals &amp; VJing</div>
+        <p>Live visuals and the rigs behind them.</p>
+      </a>
+      <a href="{{ "page/resume/" | relURL }}" class="nav-card">
+        <div class="nav-card-title"><span class="accent">&gt;</span> Resume / CV</div>
+        <p>The professional track — SRE &amp; tech leadership.</p>
+      </a>
+      <a href="{{ "page/tech-noid-systems/" | relURL }}" class="nav-card">
+        <div class="nav-card-title"><span class="accent">&gt;</span> Projects</div>
+        <p>Tech-Noid Systems, Emotional Support Pizza, &amp; more.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+{{/* ── RECENT POSTS ── */}}
+{{ $posts := where .Site.RegularPages "Type" "in" (slice "post" "posts") }}
+{{ if $posts }}
+<section class="home-section alt-bg">
+  <div class="section-wrap">
+    <div class="section-header">
+      <span class="section-label">// Latest</span>
+      <a href="{{ "post/" | relURL }}" class="section-more">View All →</a>
+    </div>
+    <div class="post-grid">
+      {{ range first 3 ($posts.ByDate.Reverse) }}
+      <a href="{{ .RelPermalink }}" class="post-card">
+        <div class="post-date">{{ .Date.Format "2006 · Jan 02" }}</div>
+        <div class="post-title">{{ .Title }}</div>
+        {{ with .Params.subtitle }}<p class="post-excerpt">{{ . }}</p>{{ else }}<p class="post-excerpt">{{ .Summary | plainify | truncate 100 }}</p>{{ end }}
+        {{ with .Params.tags }}
+        <div class="tag-list">{{ range . }}<span class="tag">{{ . }}</span>{{ end }}</div>
+        {{ end }}
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ end }}

@@ -1,0 +1,38 @@
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-brand-col">
+      {{ with .Site.Params.logo }}
+      <img src="{{ . | relURL }}" alt="{{ $.Site.Title }}" class="footer-logo">
+      {{ end }}
+      <div class="footer-tagline">{{ with .Site.Params.subtitle }}{{ . }}{{ end }}</div>
+      <div class="footer-social">
+        {{ with .Site.Params.Author.github }}<a href="https://github.com/{{ . }}" class="social-chip" target="_blank" rel="noopener">GitHub</a>{{ end }}
+        {{ with .Site.Params.Author.linkedin }}<a href="https://linkedin.com/in/{{ . }}" class="social-chip" target="_blank" rel="noopener">LinkedIn</a>{{ end }}
+        {{ with .Site.Params.Author.instagram }}<a href="https://instagram.com/{{ . }}" class="social-chip" target="_blank" rel="noopener">Instagram</a>{{ end }}
+        {{ with .Site.Params.Author.soundcloud }}<a href="https://soundcloud.com/{{ . }}" class="social-chip" target="_blank" rel="noopener">SoundCloud</a>{{ end }}
+      </div>
+    </div>
+
+    <div class="footer-nav-col">
+      <h4 class="footer-heading">Navigate</h4>
+      <ul class="footer-links">
+        {{- range .Site.Menus.main -}}
+          {{- if not .HasChildren -}}
+          <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+          {{- else -}}
+            {{- range .Children -}}
+            <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+            {{- end -}}
+          {{- end -}}
+        {{- end }}
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>&copy; {{ now.Format "2006" }} <span class="accent">{{ .Site.Title }}</span>. {{ with .Site.Params.copyright }}{{ . }}{{ end }}</span>
+    <span>Built with Hugo · Hosted on k8s</span>
+  </div>
+</footer>

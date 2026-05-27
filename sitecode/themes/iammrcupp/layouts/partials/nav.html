@@ -1,0 +1,57 @@
+{{- $currentPage := . -}}
+<nav class="site-nav" id="site-nav">
+  <div class="nav-container">
+
+    <a href="{{ "/" | relURL }}" class="nav-brand" aria-label="{{ .Site.Title }} home">
+      {{- with .Site.Params.logo -}}
+      <img src="{{ . | relURL }}" alt="{{ $.Site.Title }}" class="nav-logo">
+      {{- else -}}
+      <span class="nav-brand-text">{{ .Site.Title }}</span>
+      {{- end -}}
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      {{- range .Site.Menus.main -}}
+        {{- if .HasChildren }}
+        <li class="nav-item has-dropdown">
+          <a href="{{ if .URL }}{{ .URL | relURL }}{{ else }}#{{ end }}" class="nav-link nav-parent">{{ .Name }}</a>
+          <ul class="nav-dropdown">
+            {{- range .Children }}
+            <li><a href="{{ .URL | relURL }}" class="nav-link{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">{{ .Name }}</a></li>
+            {{- end }}
+          </ul>
+        </li>
+        {{- else if not .Parent }}
+        <li class="nav-item">
+          <a href="{{ .URL | relURL }}" class="nav-link{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">{{ .Name }}</a>
+        </li>
+        {{- end }}
+      {{- end }}
+    </ul>
+
+  </div>
+</nav>
+
+<script>
+  (function() {
+    var toggle = document.getElementById('nav-toggle');
+    var links  = document.getElementById('nav-links');
+    if (!toggle) return;
+    toggle.addEventListener('click', function() {
+      var open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    document.querySelectorAll('.nav-parent').forEach(function(el) {
+      el.addEventListener('click', function(e) {
+        if (el.getAttribute('href') === '#' || window.innerWidth < 768) {
+          e.preventDefault();
+          el.closest('.has-dropdown').classList.toggle('open');
+        }
+      });
+    });
+  })();
+</script>
