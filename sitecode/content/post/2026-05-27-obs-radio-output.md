@@ -17,7 +17,7 @@ sidecar you've been running) entirely. One less thing to babysit on stream night
 Where it's at:
 
 - Native OBS output — shows up alongside the built-in outputs, configured inside OBS
-- Icecast 2.x, with Opus and MP3 encoding (SHOUTcast is on the roadmap)
+- Supports both **Icecast 2.x and SHOUTcast v1** — pick your protocol, with Opus and MP3 encoding
 - Auto-reconnect on dropped connections, with a color-coded status dock
 - Builds for macOS (universal), Windows, and Linux
 
