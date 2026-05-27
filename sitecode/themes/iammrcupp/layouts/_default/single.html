@@ -1,0 +1,28 @@
+{{ define "main" }}
+<header class="page-header">
+  <div class="section-wrap">
+    {{ if eq .Type "post" }}
+    <div class="post-meta-top">
+      <span>{{ .Date.Format "2006 · January 02" }}</span>
+      {{ if .Site.Params.readingTime }}<span>{{ .ReadingTime }} min read</span>{{ end }}
+    </div>
+    {{ end }}
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="page-sub">{{ . }}</p>{{ end }}
+  </div>
+</header>
+
+<div class="content-wrap">
+  <div class="section-wrap">
+    <article class="content">
+      {{ .Content }}
+
+      {{ with .Params.tags }}
+      <div class="tag-list" style="margin-top:2rem">
+        {{ range . }}<a href="{{ "tags/" | relURL }}{{ . | urlize }}/" class="tag">{{ . }}</a>{{ end }}
+      </div>
+      {{ end }}
+    </article>
+  </div>
+</div>
+{{ end }}

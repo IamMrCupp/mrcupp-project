@@ -1,0 +1,32 @@
+{{ define "main" }}
+<header class="page-header">
+  <div class="section-wrap">
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="page-sub">{{ . }}</p>{{ end }}
+  </div>
+</header>
+
+<div class="list-wrap">
+  <div class="section-wrap">
+    {{ with .Content }}<div class="content" style="margin-bottom:2.5rem">{{ . }}</div>{{ end }}
+
+    {{ $pages := .Pages.ByDate.Reverse }}
+    {{ if $pages }}
+    <div class="post-list">
+      {{ range $pages }}
+      <a href="{{ .RelPermalink }}" class="post-card">
+        {{ if not (eq .Date.Year 1) }}<div class="post-date">{{ .Date.Format "2006 · Jan 02" }}</div>{{ end }}
+        <div class="post-title">{{ .Title }}</div>
+        {{ with .Params.subtitle }}<p class="post-excerpt">{{ . }}</p>{{ else }}<p class="post-excerpt">{{ .Summary | plainify | truncate 140 }}</p>{{ end }}
+        {{ with .Params.tags }}
+        <div class="tag-list">{{ range . }}<span class="tag">{{ . }}</span>{{ end }}</div>
+        {{ end }}
+      </a>
+      {{ end }}
+    </div>
+    {{ else }}
+    <p class="empty-state">// nothing here yet</p>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

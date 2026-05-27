@@ -1,0 +1,9 @@
+name = "IamMrCupp"
+license = "MIT"
+description = "Custom cyberpunk/HUD theme for mrcupp.com"
+homepage = "https://mrcupp.com"
+min_version = "0.80.0"
+
+[author]
+  name = "Aaron Cupp"
+  homepage = "https://mrcupp.com"
