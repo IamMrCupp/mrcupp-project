@@ -1,18 +1,28 @@
 ---
 title: Tech-Noid Systems
-subtitle: Bass Music Collective
+subtitle: Bass Music & Visual Collective
 comments: false
 ---
 
----
-{{< figure src="/img/TechnoidSystemsGrayscale.png" >}}
+{{< figure src="/img/TechnoidSystemsGrayscale.png" class="project-logo tns-blue" alt="Tech-Noid Systems" >}}
+
 ### Links
-- website: https://tech-noid.net
-- soundcloud: https://soundlcoud.com/TechNoidSystems/
+- Website: [tech-noid.net](https://tech-noid.net)
+- SoundCloud: [TechNoidSystems](https://soundcloud.com/TechNoidSystems)
+- OBS plugin: [obs-radio-output](https://github.com/tech-noid-systems/obs-radio-output)
 
 ### About
-Born in 2008 as an IRC network that was hosting various chat and control channels for a few internet radio projects and electronics groups that I had been part of. After leaving techno-dnb.com radio in 2008 I launched a streaming radio feed on the original Tech-Noid Systems website. The radio feeds stayed online till about 2014 when there was an issue with the hardware issues that took the project offline.  
+Tech-Noid Systems started back in 2008 as an IRC network hosting chat and control
+channels for a handful of internet radio projects and electronics groups I was part of.
+After leaving techno-dnb.com radio that year, I launched a streaming feed on the original
+TNS site — it ran until around 2014 before hardware issues took it offline.
 
-2021 and the COVID-19 pandemic hit and I am stuck at home, bored and looking for something to work on again. I decide that it would be fun to relaunch the site with a podcast tied to the collective.
+I relaunched the project during the COVID-19 pandemic in 2021, first as a podcast and now
+as a **bass music and visual collective** built around streaming and live electronic
+music shows — DnB, halftime, techno, and breaks.
 
-As of 2025, Tech-Noid System is being morphed into a Visual and Audio collective specializing in streaming and live Electronic Music shows.
+TNS is also where I build the tooling behind the streams. The latest is
+[obs-radio-output](https://github.com/tech-noid-systems/obs-radio-output), a native OBS
+Studio plugin that streams audio straight to Icecast/SHOUTcast servers — no separate
+broadcast software in the chain. The [website](https://tech-noid.net) recently got a full
+relaunch on a custom theme, too.

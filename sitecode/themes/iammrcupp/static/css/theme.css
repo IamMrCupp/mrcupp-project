@@ -221,6 +221,13 @@ a.tag:hover { border-color: var(--accent); color: var(--accent); text-decoration
 .content iframe[src*="soundcloud"] { width: 100%; height: 166px; }
 .content iframe[src*="youtube"] { width: 100%; aspect-ratio: 16/9; height: auto; }
 
+/* Project page logos */
+.project-logo { margin: 0 0 1.75rem; }
+.project-logo img { max-height: 150px; width: auto; }
+.project-logo figcaption { display: none; }
+/* Match the blue/cyan tint the TNS site uses on its grayscale footer logo */
+.tns-blue img { filter: invert(1) sepia(1) saturate(4) hue-rotate(175deg) brightness(1.05); }
+
 /* ── 10. Post grid & cards ── */
 .post-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem; }
 .post-list { display: flex; flex-direction: column; gap: 1.25rem; max-width: 780px; }
