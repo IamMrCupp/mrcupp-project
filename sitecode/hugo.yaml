@@ -81,6 +81,10 @@ menu:
       name: Emotional Support Pizza
       url: page/emotional-support-pizza
       weight: 2
+    - parent: projects
+      name: Audiophore
+      url: page/audiophore
+      weight: 3
     - name: Tags
       url: tags
       weight: 6
