@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.5.1](https://github.com/IamMrCupp/mrcupp-project/compare/v1.5.0...v1.5.1) (2026-05-28)
+
+
+### CI
+
+* drop flaky GHA buildx cache from pr.yml + image.yml ([#51](https://github.com/IamMrCupp/mrcupp-project/issues/51)) ([059e5f5](https://github.com/IamMrCupp/mrcupp-project/commit/059e5f520759f592e0ac84ec6aee2e95f6676822))
+* drop GHA buildx cache (intermittent hangs at import/export) ([3424e6d](https://github.com/IamMrCupp/mrcupp-project/commit/3424e6da7c872934672661b8a737c83c390a66fe))
+* use RELEASE_PLEASE_PAT so release tags cascade to image.yml ([37a7807](https://github.com/IamMrCupp/mrcupp-project/commit/37a780731bc350c8ecb573bd5c8e733bb7f7ad43))
+* use RELEASE_PLEASE_PAT so release tags cascade to image.yml ([#49](https://github.com/IamMrCupp/mrcupp-project/issues/49)) ([702c079](https://github.com/IamMrCupp/mrcupp-project/commit/702c079f696b90c82c28bc182ccfc5fdde69ecf8))
+
 ## [1.5.0](https://github.com/IamMrCupp/mrcupp-project/compare/v1.4.2...v1.5.0) (2026-05-28)
 
 
