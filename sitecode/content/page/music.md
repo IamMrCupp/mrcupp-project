@@ -7,6 +7,12 @@ comments: false
 # IamMrCupp
     Autonomic Halfime D&B, Greyarea, 140-170bpm DJ
 
+## Shows & Events
+We picked up a new soundsystem and we're putting it to work. I'm lining up **day parties**
+around the local area, working on locking in a **monthly** in the evenings at a local venue,
+and bringing a **stage to the annual Sacramento DJ Alliance BBQ this September**. More
+details as dates firm up.
+
 ## DJ Related Stuff
 I mix everything without planning using the following gear:
 - Allen & Heath XONE:92 Mixer
