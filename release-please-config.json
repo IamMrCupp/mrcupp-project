@@ -1,24 +1,24 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "release-type": "simple",
+  "include-component-in-tag": false,
+  "bump-minor-pre-major": false,
+  "bump-patch-for-minor-pre-major": false,
   "packages": {
     ".": {
-      "release-type": "simple",
       "package-name": "mrcupp-project",
-      "include-component-in-tag": false,
-      "tag-separator": "",
-      "draft": false,
-      "prerelease": false,
+      "changelog-path": "CHANGELOG.md",
       "changelog-sections": [
-        { "type": "feat",     "section": "Features" },
-        { "type": "fix",      "section": "Bug Fixes" },
-        { "type": "perf",     "section": "Performance" },
-        { "type": "revert",   "section": "Reverts" },
-        { "type": "docs",     "section": "Documentation" },
-        { "type": "ci",       "section": "CI/CD" },
-        { "type": "build",    "section": "Build" },
-        { "type": "refactor", "section": "Refactor", "hidden": true },
-        { "type": "test",     "section": "Tests",    "hidden": true },
-        { "type": "chore",    "section": "Chores",   "hidden": true }
+        { "type": "feat", "section": "Features" },
+        { "type": "fix", "section": "Bug Fixes" },
+        { "type": "perf", "section": "Performance" },
+        { "type": "revert", "section": "Reverts" },
+        { "type": "docs", "section": "Documentation", "hidden": false },
+        { "type": "refactor", "section": "Refactors", "hidden": false },
+        { "type": "test", "section": "Tests", "hidden": false },
+        { "type": "build", "section": "Build", "hidden": true },
+        { "type": "ci", "section": "CI", "hidden": false },
+        { "type": "chore", "section": "Chores", "hidden": true }
       ]
     }
   }
