@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.3](https://github.com/IamMrCupp/mrcupp-project/compare/v1.5.2...v1.5.3) (2026-06-11)
+
+
+### Bug Fixes
+
+* **theme:** render footer social links ([#56](https://github.com/IamMrCupp/mrcupp-project/issues/56)) ([5e8b427](https://github.com/IamMrCupp/mrcupp-project/commit/5e8b427bb92a2cc3b695ae1ab9bba4c88b11197a))
+
 ## [1.5.2](https://github.com/IamMrCupp/mrcupp-project/compare/v1.5.1...v1.5.2) (2026-06-11)
 
 
