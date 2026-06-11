@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.4](https://github.com/IamMrCupp/mrcupp-project/compare/v1.5.3...v1.5.4) (2026-06-11)
+
+
+### Documentation
+
+* **about:** refresh bio with current role and Tech-Noid Systems update ([cd34931](https://github.com/IamMrCupp/mrcupp-project/commit/cd34931669e539c6d71f57dbd89c78a2f292ee83))
+* **about:** refresh bio with current role and Tech-Noid Systems update ([#59](https://github.com/IamMrCupp/mrcupp-project/issues/59)) ([b70544d](https://github.com/IamMrCupp/mrcupp-project/commit/b70544dc00095c932440fa78f4802ef4eada2321))
+
 ## [1.5.3](https://github.com/IamMrCupp/mrcupp-project/compare/v1.5.2...v1.5.3) (2026-06-11)
 
 
