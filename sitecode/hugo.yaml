@@ -39,14 +39,13 @@ Params:
   disclaimerText: >-
     The opinions expressed herein are my own personal opinions and do not
     represent my employer’s view in any way.
-
-Author:
-  name: Aaron Cupp
-  email: mrcupp@mrcupp.com
-  github: iammrcupp
-  linkedin: mrcupp
-  instagram: iammrcupp
-  soundcloud: mrcupp
+  Author:
+    name: Aaron Cupp
+    email: mrcupp@mrcupp.com
+    github: iammrcupp
+    linkedin: mrcupp
+    instagram: iammrcupp
+    soundcloud: mrcupp
 
 menu:
   main:
