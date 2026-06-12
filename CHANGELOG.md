@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.5.5](https://github.com/IamMrCupp/mrcupp-project/compare/v1.5.4...v1.5.5) (2026-06-12)
+
+
+### Content
+
+* **post:** announce obs-radio-output Windows testing build ([b112b57](https://github.com/IamMrCupp/mrcupp-project/commit/b112b57cbe3fd9af4565fac70bf432918d597aa1))
+* **post:** announce obs-radio-output Windows testing build ([#62](https://github.com/IamMrCupp/mrcupp-project/issues/62)) ([44858e7](https://github.com/IamMrCupp/mrcupp-project/commit/44858e7f15903cd182460a954c9d5fbe58202d98))
+
+
+### CI
+
+* **release-please:** recognize content commit type so blog posts trigger releases ([a6ace75](https://github.com/IamMrCupp/mrcupp-project/commit/a6ace758cfc8d47e78732e857e62c147de14ab9d))
+* **release-please:** recognize content commit type so blog posts trigger releases ([#63](https://github.com/IamMrCupp/mrcupp-project/issues/63)) ([a20f4e6](https://github.com/IamMrCupp/mrcupp-project/commit/a20f4e6b471bf8492cc8facb2235e6c0dc520aeb))
+
 ## [1.5.4](https://github.com/IamMrCupp/mrcupp-project/compare/v1.5.3...v1.5.4) (2026-06-11)
 
 
