@@ -1,7 +1,10 @@
 name: image
 
-# Release-driven: a v* tag builds and pushes a semver-tagged multi-arch image.
-# Flux's ImagePolicy (semver) in cluster-management auto-rolls the newest tag.
+# Release-driven: a v* tag (cut by release-please) builds a multi-arch image and
+# pushes both :vX.Y.Z and a mutable :latest tag to GHCR. Flux's ImagePolicy in
+# cluster-management tracks :latest (digestReflectionPolicy: Always) and rolls the
+# deployment by rewriting its image digest. Mutable tag, NOT :v* semver — flux
+# v1.1.1's setter only rewrites the digest portion of a tag@digest ref, never the tag.
 on:
   push:
     tags: ['v*']
