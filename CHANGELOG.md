@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.6](https://github.com/IamMrCupp/mrcupp-project/compare/v1.5.5...v1.5.6) (2026-06-12)
+
+
+### CI
+
+* **image:** correct stale comment to reflect :latest mutable-tag flux flow ([085179e](https://github.com/IamMrCupp/mrcupp-project/commit/085179e735286bf30327c06317433a16399b1df9))
+* **image:** correct stale comment to reflect :latest mutable-tag flux flow ([b294cbf](https://github.com/IamMrCupp/mrcupp-project/commit/b294cbfd29436ec1044ef1b6df845d88e8607897))
+
 ## [1.5.5](https://github.com/IamMrCupp/mrcupp-project/compare/v1.5.4...v1.5.5) (2026-06-12)
 
 
