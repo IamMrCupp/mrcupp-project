@@ -69,10 +69,30 @@ menu:
     - name: Blog
       url: post/
       weight: 4
+    - identifier: electronics
+      name: Electronics
+      url: page/electronics/
+      weight: 5
+    - parent: electronics
+      name: Overview
+      url: page/electronics/
+      weight: 1
+    - parent: electronics
+      name: Repair Services
+      url: page/electronics-repair/
+      weight: 2
+    - parent: electronics
+      name: The Bench
+      url: page/electronics-bench/
+      weight: 3
+    - parent: electronics
+      name: Streaming
+      url: page/electronics-streaming/
+      weight: 4
     - identifier: projects
       name: Projects
       url: page/projects/
-      weight: 5
+      weight: 6
     - parent: projects
       name: Overview
       url: page/projects/
@@ -115,4 +135,4 @@ menu:
       weight: 10
     - name: Tags
       url: tags
-      weight: 6
+      weight: 7
