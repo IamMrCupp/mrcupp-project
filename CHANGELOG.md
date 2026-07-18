@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.6.0](https://github.com/IamMrCupp/mrcupp-project/compare/v1.5.6...v1.6.0) (2026-07-18)
+
+
+### Features
+
+* **electronics:** add electronics section (repair, bench, streaming) ([a7120c7](https://github.com/IamMrCupp/mrcupp-project/commit/a7120c7ba98189ca2374fb38537f2187f1edcc41))
+* **electronics:** add Electronics section (repair, bench, streaming) ([cddb6b9](https://github.com/IamMrCupp/mrcupp-project/commit/cddb6b975ab9db6bff9a8f277cee33a2e2293da7))
+* **projects:** add projects landing page and refresh project list ([05c3b82](https://github.com/IamMrCupp/mrcupp-project/commit/05c3b825cdaa9fbfecd9f6eb715d2d2f693b73c6))
+* **projects:** projects landing page + refreshed project list ([a23712d](https://github.com/IamMrCupp/mrcupp-project/commit/a23712d55b6bbcc3a8ed2b34ea207d0ba33528ec))
+
 ## [1.5.6](https://github.com/IamMrCupp/mrcupp-project/compare/v1.5.5...v1.5.6) (2026-06-12)
 
 
