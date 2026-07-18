@@ -71,19 +71,48 @@ menu:
       weight: 4
     - identifier: projects
       name: Projects
+      url: page/projects/
       weight: 5
+    - parent: projects
+      name: Overview
+      url: page/projects/
+      weight: 1
     - parent: projects
       name: Tech-Noid Systems
       url: page/tech-noid-systems
-      weight: 1
-    - parent: projects
-      name: Emotional Support Pizza
-      url: page/emotional-support-pizza
       weight: 2
+    - parent: projects
+      name: obs-radio-output
+      url: page/obs-radio-output
+      weight: 3
     - parent: projects
       name: Audiophore
       url: page/audiophore
-      weight: 3
+      weight: 4
+    - parent: projects
+      name: benchhud
+      url: page/benchhud
+      weight: 5
+    - parent: projects
+      name: 3D Printer Models
+      url: page/3d-printer-models
+      weight: 6
+    - parent: projects
+      name: Clickfinity (OpenSCAD)
+      url: page/clickfinity-openscad
+      weight: 7
+    - parent: projects
+      name: claude-project-kit
+      url: page/claude-project-kit
+      weight: 8
+    - parent: projects
+      name: recipe-card-maker
+      url: page/recipe-card-maker
+      weight: 9
+    - parent: projects
+      name: Emotional Support Pizza
+      url: page/emotional-support-pizza
+      weight: 10
     - name: Tags
       url: tags
       weight: 6
