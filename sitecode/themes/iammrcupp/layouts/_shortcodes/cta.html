@@ -1,0 +1,12 @@
+{{- /* Call-to-action button. Raw HTML in content is stripped (goldmark unsafe is off),
+       so links that need button styling come through here.
+
+       {{< cta href="mailto:you@example.com?subject=Hi" label="Send details" >}}
+
+       Params: href (required), label (required), outline (optional, any value = ghost style). */ -}}
+{{- $href := .Get "href" -}}
+{{- $label := .Get "label" -}}
+{{- if or (not $href) (not $label) -}}
+  {{- errorf "cta shortcode: both href and label are required (%s)" .Position -}}
+{{- end -}}
+<a class="btn{{ if not (.Get "outline") }} btn-solid{{ end }}" href="{{ $href | safeURL }}">{{ $label }}</a>

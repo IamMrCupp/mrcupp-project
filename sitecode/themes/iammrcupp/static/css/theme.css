@@ -221,6 +221,13 @@ a.tag:hover { border-color: var(--accent); color: var(--accent); text-decoration
 .content iframe[src*="soundcloud"] { width: 100%; height: 166px; }
 .content iframe[src*="youtube"] { width: 100%; aspect-ratio: 16/9; height: auto; }
 
+/* CTA button dropped into prose by the `cta` shortcode.
+   `.content a` (0,1,1) outranks `.btn-solid` (0,1,0), so the button colours have to be
+   restated at link specificity or the label renders accent-on-accent and disappears. */
+.content a.btn { margin: 1.5rem 0 0.5rem; color: var(--accent); }
+.content a.btn.btn-solid { color: var(--bg); }
+.content a.btn:hover { color: var(--bg); text-decoration: none; }
+
 /* Project page logos */
 .project-logo { margin: 0 0 1.75rem; }
 .project-logo img { max-height: 150px; width: auto; }
