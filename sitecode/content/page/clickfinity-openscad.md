@@ -5,7 +5,8 @@ comments: false
 ---
 
 ### Links
-- Source coming once the latch design is dialed in.
+- GitHub: [github.com/IamMrCupp/clickfinity-openscad](https://github.com/IamMrCupp/clickfinity-openscad)
+- Print without OpenSCAD: [latest release](https://github.com/IamMrCupp/clickfinity-openscad/releases/latest)
 
 ### About
 A parametric OpenSCAD generator for magnet-free Gridfinity baseplates — the "Clickfinity"
@@ -18,6 +19,21 @@ CAD source plus a handful of fixed-size STLs. This is a clean-room reimplementat
 the published Gridfinity dimensional spec and real measurement — no geometry lifted from
 anyone's files.
 
-The make-or-break is the latch. Arm stiffness can't be settled in CAD — it needs printed
-test tiles and a real bin in hand to tune. That's the part I'm working through now. It goes
-public under MIT once the click actually clicks.
+**It clicks, and it tiles.** The latch was the make-or-break — arm stiffness can't be
+settled in CAD, it needs printed test tiles and a real bin in hand — and it's tuned. Grip
+is moderate and adjustable.
+
+Plates also join edge-to-edge now. Every edge carries the same half-pocket on its underside,
+so butting two plates lines the halves up into one bowtie cavity and a key drops in from
+below. The joint is **symmetric** — no male and female side, so any edge mates with any
+edge in any direction, and a plate you print six months from now still attaches to what's
+already on the bench. Nothing to glue; the bench traps the keys.
+
+Any size is two knobs and a flag:
+
+```
+GRID_X = 6;   GRID_Y = 3;   JOIN = true;
+```
+
+Ready-to-print STLs ship with every release if you'd rather not install OpenSCAD. Print in
+PETG rather than PLA — the tongues sit under spring tension and PLA creeps. MIT licensed.

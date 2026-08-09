@@ -73,7 +73,10 @@ menu:
       name: Electronics
       url: page/electronics/
       weight: 5
-    - parent: electronics
+    # Explicit identifiers: two menu children both named "Overview" would otherwise derive
+    # the same identifier and Hugo would silently drop one of them.
+    - identifier: electronics-overview
+      parent: electronics
       name: Overview
       url: page/electronics/
       weight: 1
@@ -93,7 +96,10 @@ menu:
       name: Projects
       url: page/projects/
       weight: 6
-    - parent: projects
+    # Dropdown is a shortlist, not an index — the Projects landing page carries all of
+    # them with descriptions. Add a page there; only promote it here if it earns the slot.
+    - identifier: projects-overview
+      parent: projects
       name: Overview
       url: page/projects/
       weight: 1
@@ -114,25 +120,9 @@ menu:
       url: page/benchhud
       weight: 5
     - parent: projects
-      name: 3D Printer Models
-      url: page/3d-printer-models
+      name: annoybots
+      url: page/annoybots
       weight: 6
-    - parent: projects
-      name: Clickfinity (OpenSCAD)
-      url: page/clickfinity-openscad
-      weight: 7
-    - parent: projects
-      name: claude-project-kit
-      url: page/claude-project-kit
-      weight: 8
-    - parent: projects
-      name: recipe-card-maker
-      url: page/recipe-card-maker
-      weight: 9
-    - parent: projects
-      name: Emotional Support Pizza
-      url: page/emotional-support-pizza
-      weight: 10
     - name: Tags
       url: tags
       weight: 7
