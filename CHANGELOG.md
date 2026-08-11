@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.8.0](https://github.com/IamMrCupp/mrcupp-project/compare/v1.7.0...v1.8.0) (2026-08-11)
+
+
+### Features
+
+* **projects:** add bench-parts and benchhud-intake pages ([5e49af9](https://github.com/IamMrCupp/mrcupp-project/commit/5e49af9e70e96551f771942cea12f84d56d4df62))
+
+
+### Content
+
+* **post:** benchhud, watching a board cook ([e1d27cb](https://github.com/IamMrCupp/mrcupp-project/commit/e1d27cbdc7985e992c24ac222dfb45dc9085f3b8))
+* **post:** recipes that outlive the app ([b206c79](https://github.com/IamMrCupp/mrcupp-project/commit/b206c790a2cdc8f6e9be1033be7dd36e29759843))
+* **post:** three services, one privacy boundary ([a11a325](https://github.com/IamMrCupp/mrcupp-project/commit/a11a325b8b03abdbcd7e8b382796bbc3ff8fff75))
+
 ## [1.7.0](https://github.com/IamMrCupp/mrcupp-project/compare/v1.6.0...v1.7.0) (2026-08-11)
 
 
