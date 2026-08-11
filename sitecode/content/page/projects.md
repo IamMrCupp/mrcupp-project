@@ -21,6 +21,10 @@ I'm working on.
 ### Electronics & repair
 - [benchhud](/page/benchhud/) — a heads-up display for the microsoldering bench: scope,
   thermal fusion, and instrument telemetry in one window, composited straight into a stream.
+- [bench-parts](/page/bench-parts/) — self-hosted parts inventory, with a REST API benchhud
+  reads so stock shows up on the HUD.
+- [benchhud-intake](/page/benchhud-intake/) — the front door for work coming in, and the
+  reason customer data lives nowhere near the thing that streams.
 - [OpenBoardView](/page/openboardview/) — not mine, but I patched it: board-to-schematic
   cross-probing that never worked on macOS, now does.
 
