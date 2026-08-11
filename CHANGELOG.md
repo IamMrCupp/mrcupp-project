@@ -1,5 +1,32 @@
 # Changelog
 
+## [1.7.0](https://github.com/IamMrCupp/mrcupp-project/compare/v1.6.0...v1.7.0) (2026-08-11)
+
+
+### Features
+
+* **electronics:** rework repair services into a landing page with structured intake ([c8e3839](https://github.com/IamMrCupp/mrcupp-project/commit/c8e383933d7122ac1abeec024339d9d0dc7f50c5))
+* **electronics:** rework Repair Services into a landing page with structured intake ([0b70208](https://github.com/IamMrCupp/mrcupp-project/commit/0b70208ff19e3701299ce6f06ba66dba396f10fa))
+* **projects:** add annoybots, apptracker, and openboardview pages; refresh stale entries ([b55131c](https://github.com/IamMrCupp/mrcupp-project/commit/b55131ca6300a4143082f2bd0316f4a9b461955f))
+* **projects:** add annoybots, apptracker, and openboardview pages; refresh stale entries ([fb819ed](https://github.com/IamMrCupp/mrcupp-project/commit/fb819edaa353d4780ffeda3d1aaa15bb65f9b8ff))
+
+
+### Documentation
+
+* **pages:** add obs-radio-output download link ([6cc65db](https://github.com/IamMrCupp/mrcupp-project/commit/6cc65dba14458f3bae356f2cc70fc2c2624cd43f))
+* **pages:** add obs-radio-output download link ([eaf8f83](https://github.com/IamMrCupp/mrcupp-project/commit/eaf8f8390585f51bf450bef16988868397d2efd6))
+
+
+### Content
+
+* **post:** 3d printer models, source over stl ([26d9165](https://github.com/IamMrCupp/mrcupp-project/commit/26d9165e23acb3bcb153c888133de252b2e6e562))
+* **post:** annoybots, eggdrop energy on a modern stack ([2111cc7](https://github.com/IamMrCupp/mrcupp-project/commit/2111cc712c2fd53fd7e67426016430f165394b53))
+* **post:** apptracker, self-hosted job-hunt tracking ([bcec3dd](https://github.com/IamMrCupp/mrcupp-project/commit/bcec3ddbcdac86b032dd3639464fb5085adb7c82))
+* **post:** clickfinity is public ([c0741c6](https://github.com/IamMrCupp/mrcupp-project/commit/c0741c62d7b3c819d82988f9168e8c7300d23128))
+* **post:** openboardview macos pdf bridge ([1db0b30](https://github.com/IamMrCupp/mrcupp-project/commit/1db0b30bf28479aebbb58b19f0718bf724b3d7c2))
+* **post:** the bench is open for repair work ([dbf8d6f](https://github.com/IamMrCupp/mrcupp-project/commit/dbf8d6f1d9f0873bade68e9aace86c16aebb85cf))
+* **post:** what i have been building roundup ([a728961](https://github.com/IamMrCupp/mrcupp-project/commit/a728961ebfa8f87f4e2aa445ffe03d77355ccd6e))
+
 ## [1.6.0](https://github.com/IamMrCupp/mrcupp-project/compare/v1.5.6...v1.6.0) (2026-07-18)
 
 
