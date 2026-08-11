@@ -5,6 +5,7 @@ comments: false
 ---
 
 ### Links
+- Download: [Releases](https://github.com/Tech-Noid-Systems/obs-radio-output/releases) — signed builds for macOS, Linux, and Windows
 - GitHub: [github.com/Tech-Noid-Systems/obs-radio-output](https://github.com/Tech-Noid-Systems/obs-radio-output)
 - Part of: [Tech-Noid Systems](/page/tech-noid-systems/)
 
