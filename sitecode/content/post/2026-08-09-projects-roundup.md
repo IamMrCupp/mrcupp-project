@@ -34,6 +34,11 @@ habit went physical.
 - **[benchhud](/page/benchhud/)** — a heads-up display for the microsoldering bench. Scope
   feed, thermal camera registered on top of it so a component's heat bloom lands on the
   component, instrument telemetry, all in one window and composited straight into a stream.
+  [How the fusion works](/post/2026-08-10-benchhud/).
+- **[bench-parts](/page/bench-parts/)** and **[benchhud-intake](/page/benchhud-intake/)** —
+  inventory and job intake, running on the cluster. They're separate services for a reason
+  worth its own post: [the streaming feature drew a privacy
+  boundary](/post/2026-08-10-bench-stack-privacy-boundary/).
 - **[OpenBoardView](/page/openboardview/)** — not mine. Someone else's board viewer that I
   patched because board-to-schematic cross-probing silently did nothing on macOS. [The story
   of that one](/post/2026-07-29-openboardview-macos-pdf-bridge/) is a decent lesson in how a
@@ -55,7 +60,7 @@ habit went physical.
 - **[apptracker](/page/apptracker/)** — self-hosted job-hunt tracking that lives in your
   cluster instead of one browser's local storage.
 - **[recipe-card-maker](/page/recipe-card-maker/)** — markdown recipes in, printable binder
-  pages and 4×6 tin cards out.
+  pages and 4×6 tin cards out. [Why plain files](/post/2026-08-10-recipe-card-maker/).
 
 ## Chat
 
