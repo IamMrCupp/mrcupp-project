@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.9.0](https://github.com/IamMrCupp/mrcupp-project/compare/v1.8.0...v1.9.0) (2026-09-09)
+
+
+### Features
+
+* **music:** latest-mix embed, EMP Radio residencies, about refresh ([efab9bd](https://github.com/IamMrCupp/mrcupp-project/commit/efab9bd8a473ab7bed18864c0454497154268ea8))
+* profile refresh — resume, music, about, and project pages current for Sept 2026 ([ecc1650](https://github.com/IamMrCupp/mrcupp-project/commit/ecc16506ec2dcf5635afa0b4e045e4e790e9f0cc))
+* **projects:** add snapmaker tooling and pwnagotchi pages, refresh stale entries ([bb7232b](https://github.com/IamMrCupp/mrcupp-project/commit/bb7232bda55b5e49ed53903be9d0572e95fb3c82))
+* **resume:** bring the CV current through 2026 ([bf765fb](https://github.com/IamMrCupp/mrcupp-project/commit/bf765fb9f9e85568d6edb446e725abb8f0f3114e))
+
+
+### Content
+
+* **post:** bench-parts is on the cluster ([5f5f73b](https://github.com/IamMrCupp/mrcupp-project/commit/5f5f73b67778e8c5d7856aeeb6cf9596c4516673))
+* **post:** the lint that catches me contradicting myself ([40cf78f](https://github.com/IamMrCupp/mrcupp-project/commit/40cf78f88bf3f9167a3c79b1ce93356482b64796))
+* **post:** the node that wasn't dead ([9b6184e](https://github.com/IamMrCupp/mrcupp-project/commit/9b6184e09452ccf2649af4e096c436f7fb206cef))
+* **post:** the printer has a linux box in it ([a04533b](https://github.com/IamMrCupp/mrcupp-project/commit/a04533b8cf1bcb8ded1a7b31792a8ffdbe7a5230))
+* **post:** twelve models became thirty ([4fe402a](https://github.com/IamMrCupp/mrcupp-project/commit/4fe402a9be82ac36e7e242c5fa1da9a62731d9fa))
+
 ## [1.8.0](https://github.com/IamMrCupp/mrcupp-project/compare/v1.7.0...v1.8.0) (2026-08-11)
 
 
