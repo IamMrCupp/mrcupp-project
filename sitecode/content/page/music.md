@@ -7,6 +7,20 @@ comments: false
 # IamMrCupp
     Autonomic Halfime D&B, Greyarea, 140-170bpm DJ
 
+## Latest mix
+**EMP Radio Demo Derby — 08-22-26.** A fresh one, straight off the board from the August
+Demo Derby. [A few words about it](/post/2026-09-09-demo-derby-08-22-26/).
+
+{{< soundcloud-track 2397087048 >}}
+
+## Where you'll hear me
+- **EMP Radio** — a regular on the **Demo Derby** and **Slappy Hour** shows, often b2b with
+  b10burd3n. Every one of those sets lands in the guest-mix archive below.
+- **Tech-Noid Systems** — the collective's own streams and shows, on our own
+  [soundsystem](/page/tech-noid-systems/).
+- Occasional guest spots elsewhere — {decompress}, 916junglist's *Inside The Ride* — same
+  archive.
+
 ## Shows & Events
 We picked up a new soundsystem and we're putting it to work. I'm lining up **day parties**
 around the local area, working on locking in a **monthly** in the evenings at a local venue,
