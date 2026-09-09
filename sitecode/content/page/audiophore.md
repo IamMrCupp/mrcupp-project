@@ -24,5 +24,13 @@ What it talks to:
 - Ether Dream laser DACs
 - OSC passthrough for anything else that speaks it
 
+Under the hood it's a Rust engine with pluggable input adapters, Lua-scripted show files,
+and a Tauri + Svelte native app on top. **Sub-30 ms from audio event to light is the
+non-negotiable** — anything slower and the room notices before you do. The
+[brand kit](https://github.com/audiophore/branding) is public too: logos, wordmark, and
+palette, all regenerated from one `brand.toml`. There's even a printed enclosure for the
+bench-side hardware, designed in OpenSCAD like everything else around here.
+
 It's still pre-launch — [audiophore.dev](https://audiophore.dev) is a placeholder for now
-— but the bones are coming together and it's steadily turning into a real thing.
+— but the bones are there, it's under CI with fuzzed inputs and latency benchmarks, and
+it's steadily turning into a real thing. Source-available under PolyForm Noncommercial.

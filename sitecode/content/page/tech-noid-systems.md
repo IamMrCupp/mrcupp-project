@@ -21,6 +21,10 @@ I relaunched the project during the COVID-19 pandemic in 2021, first as a podcas
 as a **bass music and visual collective** built around streaming and live electronic
 music shows — DnB, halftime, techno, and breaks.
 
+The collective has its own **soundsystem** now — QSC-based, and built to be moved. It's
+what the [day parties](/post/2026-05-27-day-parties/) run on, and it's the reason a monthly
+at a local venue is a real conversation instead of a wish.
+
 TNS is also where I build the tooling behind the streams. The latest is
 [obs-radio-output](https://github.com/tech-noid-systems/obs-radio-output), a native OBS
 Studio plugin that streams audio straight to Icecast/SHOUTcast servers — no separate

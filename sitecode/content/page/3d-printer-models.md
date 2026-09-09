@@ -14,24 +14,34 @@ generates them. Models are authored in OpenSCAD, so **the STL is an output, not 
 artifact.** Need it 20&nbsp;mm wider? Change a variable and re-render, instead of hunting for
 someone's remix at a size that happens to fit.
 
-A dozen models live here now, most of them solving a real problem on a real bench or desk:
+Thirty models live here now, and most of them hold the repair bench together. The
+bench got reorganized onto Gridfinity over the summer, and nearly everything on it that
+isn't an instrument is a print from this repo:
 
-- **Bench cleaning station** — Gridfinity cups and bins for the IPA corner: aerosols, wash
-  bottle, dispenser pump, melamine sponges.
-- **Rotary tool station** — vertical cup for a mini rotary tool plus a drilled block for
-  its bits, with a print-first hole-fit gauge so you get the fit right the first time.
-- **OWON SPM8104 top tray** — a magnet-free Clickfinity tray that screw-clamps onto the
-  PSU, ten cells for the cord and barrel adapters. No adhesive.
-- **ENGINDOT Shortkiller topper** — sits on the bench supply lid and holds the short-finder
-  where you can actually use it: displays facing you, leads in a bucket behind it instead
-  of tangled across the bench.
-- **VJ rig stand** — iPad cradle for TouchOSC, trackpad tray, cable holder.
-- **Drybox splitter stand**, **Apache 5800 cord organizer**, **stand cable clamps**,
-  **sticker-holder inserts**, **syringe holders**, **UV mask station**, **donation QR
-  stand** — the rest of the shelf.
+- **Around the iron** — soldering station mounts, a wick-and-solder spool that *is* the
+  shaft, a hot-air nozzle rack, a bin for iron tips, and a trough for chip-removal alloy.
+- **Cleaning and chemistry** — the bench cleaning station (IPA aerosols, wash bottle, pump,
+  sponges, wipes, swabs), syringe holders for flux, and an opaque UV mask station, because
+  ambient light skins the mask.
+- **Instruments** — docks for a logic analyzer, a chip programmer, and an LCR meter;
+  risers that lift the scope and the hot-air station back off the desk; PSU plates; a
+  magnet-free tray that clamps onto the OWON PSU; a topper that puts the Shortkiller where
+  you can operate it.
+- **Optics** — a baseplate that wraps the microscope's boom base and reclaims it as 13
+  cells, and a two-part clamp holding the thermal camera on the ring light, aimed at the
+  board. The clamp ships an aim-verification script, because a mount pointed at the
+  objective still passes a mesh check.
+- **Filler tiles** — flat lids that turn empty grid into a working surface, 1×1 to 6×6.
+  Corner feet only: a 6×6 latched at every cell would take 45 kgf to lift.
+- **Away from the bench** — a VJ rig stand, a drybox splitter stand, an Apache case cord
+  organizer, stand cable clamps, sticker inserts, a donation QR stand, a jar tray, a remote
+  tray.
 
 Each model is its own directory with parametric source, a README covering dimensions and
-print settings, and a Blender preview. Each one also releases independently: push a
+print settings, and a Blender preview. That's enforced, not aspirational: a catalog check
+fails the PR if a model directory is missing its README, its preview, or its row in the
+README table — a model that isn't ready to be catalogued isn't ready to be on `main`. Each
+one also releases independently: push a
 `<model>/vX.Y.Z` tag and CI renders the STLs plus a preview and publishes them as release
 artifacts. On every pull request the same pipeline re-renders everything and runs a
 watertight/2-manifold mesh check, so a parameter edit that quietly breaks geometry fails

@@ -10,9 +10,9 @@ I'm working on.
 
 ### Music & audio
 - [Tech-Noid Systems](/page/tech-noid-systems/) — my bass music and visual collective:
-  streaming, live shows, and the tooling behind the feed.
+  a soundsystem, live shows, streaming, and the tooling behind the feed.
 - [obs-radio-output](/page/obs-radio-output/) — a native OBS plugin that streams straight
-  to Icecast/SHOUTcast. Public beta.
+  to Icecast/SHOUTcast. Public beta on macOS, Linux, and Windows.
 
 ### Light & visuals
 - [Audiophore](/page/audiophore/) — a low-latency bridge from Synesthesia to your whole
@@ -22,21 +22,26 @@ I'm working on.
 - [benchhud](/page/benchhud/) — a heads-up display for the microsoldering bench: scope,
   thermal fusion, and instrument telemetry in one window, composited straight into a stream.
 - [bench-parts](/page/bench-parts/) — self-hosted parts inventory, with a REST API benchhud
-  reads so stock shows up on the HUD.
+  reads so stock shows up on the HUD. Running on the cluster.
 - [benchhud-intake](/page/benchhud-intake/) — the front door for work coming in, and the
   reason customer data lives nowhere near the thing that streams.
 - [OpenBoardView](/page/openboardview/) — not mine, but I patched it: board-to-schematic
   cross-probing that never worked on macOS, now does.
 
 ### 3D printing & making
-- [3D Printer Models](/page/3d-printer-models/) — a dozen printable models, kept as source
-  so you can regenerate them, not just download a fixed STL.
+- [3D Printer Models](/page/3d-printer-models/) — thirty printable models, kept as source
+  so you can regenerate them, not just download a fixed STL. Most of them hold the bench
+  together.
 - [Clickfinity (OpenSCAD)](/page/clickfinity-openscad/) — magnet-free Gridfinity
   baseplates, fully parametric. It clicks, and it tiles.
+- [Snapmaker U1 tooling](/page/snapmaker-u1-tooling/) — firmware patching and RFID
+  diagnostics for the printer all of the above comes off, plus an iOS app that writes
+  OpenSpool NFC spool tags.
 
 ### Tools & apps
 - [claude-project-kit](/page/claude-project-kit/) — a scaffolding kit that starts every
-  AI-assisted session already grounded.
+  AI-assisted session already grounded. Bootstrap script, lifecycle commands, a lint that
+  catches convention drift.
 - [apptracker](/page/apptracker/) — self-hosted job-hunt tracking that lives in your
   cluster instead of one browser's local storage.
 - [recipe-card-maker](/page/recipe-card-maker/) — markdown recipes in, printable binder
@@ -45,7 +50,14 @@ I'm working on.
 ### Chat & bots
 - [annoybots](/page/annoybots/) — the eggdrop and BMotion era rebuilt as one Go binary:
   IRC, Twitch, and Discord at once, with a Markov brain that still babbles.
+- [pwnagotchi plugins](/page/pwnagotchi-plugins/) — two small plugins for the little
+  Wi-Fi-handshake Tamagotchi: an age readout the current image lost, and a pcap cleaner.
 
 ### And one more
 - [Emotional Support Pizza](/page/emotional-support-pizza/) — artisan baked pizza, breads,
   and pastries.
+
+### Coming up
+There's a new app in the pipeline that I'm not saying much about yet — different corner of
+the map from the bench and the lights. It gets its own page here the moment there's
+something to show. Watch the [blog](/post/).

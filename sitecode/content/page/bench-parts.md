@@ -5,7 +5,8 @@ comments: false
 ---
 
 ### Links
-- Source: private for now.
+- Source: private for now. Builds will be posted here as downloads while I settle how the
+  source gets shared.
 
 ### About
 Knowing you have the part is half of quoting a repair. bench-parts is the inventory that
