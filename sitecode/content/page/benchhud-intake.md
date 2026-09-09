@@ -5,7 +5,8 @@ comments: false
 ---
 
 ### Links
-- Source: private for now.
+- Source: private for now. Builds will be posted here as downloads while I settle how the
+  source gets shared.
 
 ### About
 The front door for work arriving at the bench. A tablet-friendly web form for taking a job
