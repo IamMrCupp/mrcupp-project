@@ -1,5 +1,28 @@
 # Changelog
 
+## [1.10.0](https://github.com/IamMrCupp/mrcupp-project/compare/v1.9.0...v1.10.0) (2026-09-20)
+
+
+### Features
+
+* **electronics:** add a support-the-bench block to the streaming page ([2237d30](https://github.com/IamMrCupp/mrcupp-project/commit/2237d302b8eb375dcb2d407c608797be327ef2b7))
+* **electronics:** aliexpress deep links keyed from config ([ac4c176](https://github.com/IamMrCupp/mrcupp-project/commit/ac4c17692d310fa9f2e65c1b69e2fc31363583cb))
+* **electronics:** announce Twitch and YouTube streams, surface the bench on the home page ([9d22d9f](https://github.com/IamMrCupp/mrcupp-project/commit/9d22d9fd845b07742befaf0b2c7349150095f16a))
+* **electronics:** bench gear list with affiliate-ready links ([a033153](https://github.com/IamMrCupp/mrcupp-project/commit/a0331538b2e20d0254e7aa22fa713f89bcf76b68))
+* **electronics:** gear list on The Bench with config-driven affiliate link shortcodes ([90dea20](https://github.com/IamMrCupp/mrcupp-project/commit/90dea208216c9fb18942069fafd7ce5e28f69a12))
+* **electronics:** set the amazon associates tag ([042cfb6](https://github.com/IamMrCupp/mrcupp-project/commit/042cfb6918da7b75192a012e26492199e7fc5aca))
+* **electronics:** streaming channels, bench on the home page ([026c994](https://github.com/IamMrCupp/mrcupp-project/commit/026c994d427ad6ff737f312af0c4ef41564f83b6))
+* **music:** recap the EMP Radio and SDJA BBQs, link the rig post ([c74a0bf](https://github.com/IamMrCupp/mrcupp-project/commit/c74a0bf987f42fb020f4ab267426e34a2c712e8e))
+* **projects:** add the sekrit page and announcement ([f9b7060](https://github.com/IamMrCupp/mrcupp-project/commit/f9b7060b546e3f348cb4d9d12fb1ddf0c65257fe))
+* **resume:** add a downloadable PDF ([bb0320c](https://github.com/IamMrCupp/mrcupp-project/commit/bb0320cbc398df3efaffb915b85633d2ef50b72f))
+* September follow-ups — BBQ recap, sekrit, shortcodes v0.5.0, resume PDF ([9b99c11](https://github.com/IamMrCupp/mrcupp-project/commit/9b99c11ea650b3d23b6056d4be876644122777dd))
+* **shortcodes:** bump hugo-shortcodes to v0.5.0, mount _shortcodes, style instagram cards ([ef4be8e](https://github.com/IamMrCupp/mrcupp-project/commit/ef4be8ea10e427fc107d7f1d759688b32110a557))
+
+
+### Bug Fixes
+
+* **shortcodes:** format numeric item ids correctly in ali and amzn links ([afe8e5b](https://github.com/IamMrCupp/mrcupp-project/commit/afe8e5bd0d8376e693adc85df6c706af0036a048))
+
 ## [1.9.0](https://github.com/IamMrCupp/mrcupp-project/compare/v1.8.0...v1.9.0) (2026-09-09)
 
 
