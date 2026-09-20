@@ -1,8 +1,12 @@
 {{- /* AliExpress product link. Usage: {{< ali ITEM_ID "Label" >}}
-     Uses the affiliate link prefix from Params.affiliate.aliPrefix when set (the portal
-     hands you a redirect prefix); otherwise links the item page directly. */ -}}
+     With Params.affiliate.aliKey set (the `_xxxxxxxx` key from a Portals-generated link),
+     builds an s.click deep link that carries the key and lands on the item — no per-product
+     link generation needed. Blank key → plain item link. */ -}}
 {{- $item := .Get 0 -}}
 {{- $label := .Get 1 | default $item -}}
-{{- $url := printf "https://www.aliexpress.com/item/%s.html" $item -}}
-{{- with .Site.Params.affiliate.aliPrefix }}{{ $url = printf "%s%s" . $url }}{{ end -}}
+{{- $target := printf "https://www.aliexpress.com/item/%s.html" $item -}}
+{{- $url := $target -}}
+{{- with .Site.Params.affiliate.aliKey -}}
+  {{- $url = printf "https://s.click.aliexpress.com/deep_link.htm?aff_short_key=%s&dl_target_url=%s" . (urlquery $target) -}}
+{{- end -}}
 <a href="{{ $url }}" target="_blank" rel="noopener sponsored">{{ $label }}</a>

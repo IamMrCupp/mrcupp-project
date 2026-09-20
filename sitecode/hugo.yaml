@@ -43,7 +43,7 @@ Params:
   # render plain links when these are blank and tagged links the moment they're filled in.
   affiliate:
     amazonTag: ""      # Amazon Associates tracking ID, e.g. iammrcupp-20
-    aliPrefix: ""      # AliExpress Portals link prefix, if their tool gives you one
+    aliKey: "_c41ON0jP" # AliExpress Portals affiliate key (the `_xxxxxxxx` part of a generated s.click link)
   Author:
     name: Aaron Cupp
     email: mrcupp@mrcupp.com
