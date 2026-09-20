@@ -1,0 +1,9 @@
+{{- /* Amazon product link. Usage: {{< amzn ASIN "Label" >}}
+     Appends the Associates tag from Params.affiliate.amazonTag when one is set,
+     so every link on the site picks up the tag from one config line. Empty tag → plain link. */ -}}
+{{- $asin := .Get 0 -}}
+{{- $label := .Get 1 | default $asin -}}
+{{- $tag := .Site.Params.affiliate.amazonTag -}}
+{{- $url := printf "https://www.amazon.com/dp/%v" $asin -}}
+{{- if $tag }}{{ $url = printf "%s?tag=%s" $url $tag }}{{ end -}}
+<a href="{{ $url }}" target="_blank" rel="noopener sponsored">{{ $label }}</a>
