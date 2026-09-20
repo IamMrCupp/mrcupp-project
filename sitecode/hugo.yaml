@@ -13,8 +13,11 @@ module:
   imports:
     - path: github.com/IamMrCupp/hugo-shortcodes
       mounts:
-        - source: "layouts/shortcodes/"
-          target: "layouts/shortcodes/"
+        # v0.5.0 moved the collection to Hugo's `_shortcodes` layout dir and nests names
+        # (`instagram/post`, `soundcloud/playlist`). The site's own shortcodes stay in
+        # layouts/shortcodes/ and are unaffected.
+        - source: "layouts/_shortcodes/"
+          target: "layouts/_shortcodes/"
 
 Params:
   homeTitle: IamMrCupp
