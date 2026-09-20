@@ -4,6 +4,6 @@
 {{- $asin := .Get 0 -}}
 {{- $label := .Get 1 | default $asin -}}
 {{- $tag := .Site.Params.affiliate.amazonTag -}}
-{{- $url := printf "https://www.amazon.com/dp/%s" $asin -}}
+{{- $url := printf "https://www.amazon.com/dp/%v" $asin -}}
 {{- if $tag }}{{ $url = printf "%s?tag=%s" $url $tag }}{{ end -}}
 <a href="{{ $url }}" target="_blank" rel="noopener sponsored">{{ $label }}</a>
