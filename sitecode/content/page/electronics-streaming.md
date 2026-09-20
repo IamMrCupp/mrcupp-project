@@ -40,3 +40,11 @@ the intake and I'll put it on the stream.
 contacts is a separate service on a separate network from the thing that composites the
 video, on purpose — [the boundary is the point](/post/2026-08-10-bench-stack-privacy-boundary/).
 What you'll see is a board, a job number, and the work.
+
+### Support the bench
+The best way to support this is to **send in a board** — a repair job pays for the next
+roll of wick and it's a stream at the same time. If you just want to say thanks:
+
+- [Ko-fi](https://ko-fi.com/IamMrCupp) · [Buy Me a Coffee](https://buymeacoffee.com/IamMrCupp)
+- The gear list on [The Bench](/page/electronics-bench/) carries affiliate links — buying
+  through them costs you nothing extra and sends a little back here.
