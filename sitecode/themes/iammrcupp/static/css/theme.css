@@ -228,6 +228,19 @@ a.tag:hover { border-color: var(--accent); color: var(--accent); text-decoration
 .content a.btn.btn-solid { color: var(--bg); }
 .content a.btn:hover { color: var(--bg); text-decoration: none; }
 
+/* Instagram link card from the `instagram/post` shortcode (module ships no CSS).
+   Restated at `.content a` specificity for the same reason as the CTA above. */
+.content a.instagram-card {
+  display: flex; align-items: baseline; gap: 0.75rem;
+  margin: 1.25rem 0; padding: 0.9rem 1.25rem;
+  border: 1px solid var(--border); color: var(--text); text-decoration: none;
+  transition: border-color 0.2s;
+}
+.content a.instagram-card:hover { border-color: var(--accent); text-decoration: none; }
+.instagram-card-label { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: var(--text-dim); }
+.instagram-card-text { flex: 1 1 auto; }
+.instagram-card-cta { font-family: var(--mono); font-size: 0.8rem; color: var(--accent); white-space: nowrap; }
+
 /* Project page logos */
 .project-logo { margin: 0 0 1.75rem; }
 .project-logo img { max-height: 150px; width: auto; }

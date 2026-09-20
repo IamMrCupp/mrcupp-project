@@ -40,6 +40,6 @@ I specialized in audio reactive shader based visual projection using projection 
 
 ### Visual and Audio Portfolio
 - Trial Run @ TSR Flower Moon - I <3 D&B Record Release Party
-    {{< instagram DJmgI3DJqON >}}
+    {{< instagram/post id="DJmgI3DJqON" embed="true" >}}
 - Test Running Gear at Tech-Noid Systems
-    {{< instagram DEYwN_7vTvu >}}
+    {{< instagram/post id="DEYwN_7vTvu" embed="true" >}}

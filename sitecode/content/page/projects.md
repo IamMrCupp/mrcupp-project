@@ -58,6 +58,6 @@ I'm working on.
   and pastries.
 
 ### Coming up
-There's a new app in the pipeline that I'm not saying much about yet — different corner of
-the map from the bench and the lights. It gets its own page here the moment there's
-something to show. Watch the [blog](/post/).
+- [sekrit](/page/sekrit/) — open, self-hostable event ticketing for independent
+  promoters. No gatekeeping, you own your list, your money never touches the platform.
+  Pre-alpha, and the first thing here built for the scene rather than the bench.

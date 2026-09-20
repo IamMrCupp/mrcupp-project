@@ -10,6 +10,7 @@ Sacramento, CA · Remote
 - [GitHub](https://github.com/iammrcupp)
 - [LinkedIn](https://linkedin.com/in/mrcupp)
 - [Email me](mailto:mrcupp@mrcupp.com)
+- [Download as PDF](/files/Aaron_Cupp_Resume.pdf)
 
 **Senior / Staff Infrastructure · SRE · Platform Engineer.** Open to senior IC and
 engineering-leadership roles — infrastructure, SRE, platform. Remote-first.
