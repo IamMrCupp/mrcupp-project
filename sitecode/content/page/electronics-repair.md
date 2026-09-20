@@ -30,6 +30,11 @@ Saying this up front saves us both an email:
   a recovery lab is the right call, and going in with a soldering iron first can make their
   job harder.
 
+### Watch it happen
+The bench is going on stream — [Twitch and YouTube](/page/electronics-streaming/), under my
+own handle. If you'd like to see your board get fixed, say so when you send the details and
+I'll put the job on camera. Your name never does.
+
 ### How it works
 This is a growing practice — no ticketing system, no storefront, just reach out and tell me
 what you've got. I'll be straight about whether it's something I can fix, what it'll take,
@@ -52,7 +57,7 @@ doing. Include what you can:
 The button below opens a blank email with those fields already laid out — fill in what you
 know, skip what you don't.
 
-{{< cta href="mailto:mrcupp@mrcupp.com?subject=Repair%20inquiry&body=Device%3A%0D%0A%0D%0AModel%20%2F%20board%20number%3A%0D%0A%0D%0ASymptom%20-%20what%20it%20does%20now%2C%20and%20what%20it%20should%20do%3A%0D%0A%0D%0AWhat%20changed%20right%20before%20it%20failed%3A%0D%0A%0D%0AWhat%20has%20already%20been%20tried%3A%0D%0A%0D%0AHas%20it%20been%20opened%20or%20repaired%20before%3A%0D%0A%0D%0AWhere%20you%20are%2C%20and%20whether%20you%20would%20ship%20it%20or%20drop%20it%20off%3A%0D%0A%0D%0APhotos%20of%20the%20board%20help%20a%20lot%20-%20attach%20them%20if%20you%20can.%0D%0A" label="Send repair details" >}}
+{{< cta href="mailto:mrcupp@mrcupp.com?subject=Repair%20inquiry&body=Device%3A%0D%0A%0D%0AModel%20%2F%20board%20number%3A%0D%0A%0D%0ASymptom%20-%20what%20it%20does%20now%2C%20and%20what%20it%20should%20do%3A%0D%0A%0D%0AWhat%20changed%20right%20before%20it%20failed%3A%0D%0A%0D%0AWhat%20has%20already%20been%20tried%3A%0D%0A%0D%0AHas%20it%20been%20opened%20or%20repaired%20before%3A%0D%0A%0D%0AWhere%20you%20are%2C%20and%20whether%20you%20would%20ship%20it%20or%20drop%20it%20off%3A%0D%0A%0D%0AOK%20to%20put%20the%20repair%20on%20stream%20%28yes%20%2F%20no%29%3A%0D%0A%0D%0APhotos%20of%20the%20board%20help%20a%20lot%20-%20attach%20them%20if%20you%20can.%0D%0A" label="Send repair details" >}}
 
 Or just write to [mrcupp@mrcupp.com](mailto:mrcupp@mrcupp.com) in your own words — that
 works too.
