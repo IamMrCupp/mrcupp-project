@@ -1,0 +1,8 @@
+{{- /* AliExpress product link. Usage: {{< ali ITEM_ID "Label" >}}
+     Uses the affiliate link prefix from Params.affiliate.aliPrefix when set (the portal
+     hands you a redirect prefix); otherwise links the item page directly. */ -}}
+{{- $item := .Get 0 -}}
+{{- $label := .Get 1 | default $item -}}
+{{- $url := printf "https://www.aliexpress.com/item/%s.html" $item -}}
+{{- with .Site.Params.affiliate.aliPrefix }}{{ $url = printf "%s%s" . $url }}{{ end -}}
+<a href="{{ $url }}" target="_blank" rel="noopener sponsored">{{ $label }}</a>

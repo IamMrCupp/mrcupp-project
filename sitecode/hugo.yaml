@@ -39,6 +39,11 @@ Params:
   disclaimerText: >-
     The opinions expressed herein are my own personal opinions and do not
     represent my employer’s view in any way.
+  # Affiliate tags. Leave empty until the accounts exist; the `amzn` / `ali` shortcodes
+  # render plain links when these are blank and tagged links the moment they're filled in.
+  affiliate:
+    amazonTag: ""      # Amazon Associates tracking ID, e.g. iammrcupp-20
+    aliPrefix: ""      # AliExpress Portals link prefix, if their tool gives you one
   Author:
     name: Aaron Cupp
     email: mrcupp@mrcupp.com
