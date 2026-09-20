@@ -22,10 +22,20 @@ Demo Derby. [A few words about it](/post/2026-09-09-demo-derby-08-22-26/).
   archive.
 
 ## Shows & Events
-We picked up a new soundsystem and we're putting it to work. I'm lining up **day parties**
-around the local area, working on locking in a **monthly** in the evenings at a local venue,
-and bringing a **stage to the annual Sacramento DJ Alliance BBQ this September**. More
-details as dates firm up.
+The soundsystem is real and it has been out of the house twice now. Both were BBQs, both
+were free, both were the good kind of long day.
+
+- **SDJA Annual BBQ — Sep 13, Discovery Park.** Tech-Noid Systems ran a stage alongside
+  EMP Radio: open decks from 10am, then sets straight through until the system went off at
+  sunset. [Why we did it](/post/2026-09-14-two-bbqs-and-a-rig/).
+- **EMP Radio BBQ — Aug 15, William B Pond Park.** Show-up-and-play, excellent turnout,
+  the rig's first day in a park.
+
+{{< instagram/post id="DdVBnCxGKUm" caption="SDJA BBQ — photos and clips from the day" >}}
+{{< instagram/post id="DaxsryXvzFf" caption="EMP Radio BBQ — Civector's video" >}}
+
+Next up: a **monthly** in the evenings at a local venue is still the goal. Dates land on
+[tech-noid.net/events](https://tech-noid.net/events/) first, and the Discord before that.
 
 ## DJ Related Stuff
 I mix everything without planning using the following gear:
