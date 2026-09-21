@@ -8,7 +8,7 @@ comments: false
 
 ### Links
 - Website: [tech-noid.net](https://tech-noid.net)
-- SoundCloud: [TechNoidSystems](https://soundcloud.com/TechNoidSystems)
+- SoundCloud: [tech-noid-systems](https://soundcloud.com/tech-noid-systems)
 - OBS plugin: [obs-radio-output](https://github.com/tech-noid-systems/obs-radio-output)
 
 ### About
