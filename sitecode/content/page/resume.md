@@ -121,7 +121,7 @@ engineering and led directly back into infrastructure work.
   replaced physical servers with a KVM / libvirt virtualized environment.
 * Implemented monitoring with PagerDuty and Nagios.
 
-## Selected projects & open source
+## Selected projects
 - **[Audiophore](/page/audiophore/)** (Rust) — engine bridging VJ audio analysis
   (Synesthesia OSC) to real-time lighting across Hue, WLED, DMX / Art-Net, sACN / E1.31,
   and ILDA lasers. Sub-30 ms latency, Lua-scripted show files, Tauri + Svelte native app.
@@ -139,7 +139,10 @@ engineering and led directly back into infrastructure work.
   [bench-parts](/page/bench-parts/), and [benchhud-intake](/page/benchhud-intake/): an
   OpenCV / v4l2loopback compositor fusing microscope, thermal-imaging, and instrument
   telemetry into a single live video feed, backed by a separate self-hosted inventory
-  service whose REST API the HUD and an intake service both consume. Runs on the cluster.
+  service whose REST API the HUD and an intake service both consume. The services are
+  test-first (585 tests) and deploy to a multi-arch Raspberry Pi Kubernetes cluster via
+  Flux GitOps with image automation; customer data is isolated from the streaming path by
+  design.
 - **[3D Printer Models](/page/3d-printer-models/)** and
   **[Clickfinity](/page/clickfinity-openscad/)** (OpenSCAD) — thirty parametric models with
   CI-validated meshes and per-model releases, plus a clean-room magnet-free Gridfinity
