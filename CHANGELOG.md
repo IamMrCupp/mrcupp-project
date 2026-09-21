@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.11.1](https://github.com/IamMrCupp/mrcupp-project/compare/v1.11.0...v1.11.1) (2026-09-21)
+
+
+### Bug Fixes
+
+* **tech-noid-systems:** point the SoundCloud link at the real account ([d615301](https://github.com/IamMrCupp/mrcupp-project/commit/d6153012a2e04c141f552afc934304528ac0caf1))
+* **tech-noid-systems:** point the SoundCloud link at the real account ([0d33d48](https://github.com/IamMrCupp/mrcupp-project/commit/0d33d485c4fa81b0edceca94a02c83f08aac0d16))
+
 ## [1.11.0](https://github.com/IamMrCupp/mrcupp-project/compare/v1.10.0...v1.11.0) (2026-09-21)
 
 
