@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.11.0](https://github.com/IamMrCupp/mrcupp-project/compare/v1.10.0...v1.11.0) (2026-09-21)
+
+
+### Features
+
+* **resume:** drop the open-source label, add bench stack deployment detail ([50c5e49](https://github.com/IamMrCupp/mrcupp-project/commit/50c5e4937775799854290db65a6ea1d58f5c4d36))
+* **resume:** projects section tweaks ([123f11b](https://github.com/IamMrCupp/mrcupp-project/commit/123f11b9d34af3ef50f45e0ebfb3e6e4597c95c1))
+
 ## [1.10.0](https://github.com/IamMrCupp/mrcupp-project/compare/v1.9.0...v1.10.0) (2026-09-20)
 
 
