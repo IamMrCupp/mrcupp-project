@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.12.0](https://github.com/IamMrCupp/mrcupp-project/compare/v1.11.1...v1.12.0) (2026-09-23)
+
+
+### Features
+
+* **theme:** Open Graph and card meta tags ([b1eb90d](https://github.com/IamMrCupp/mrcupp-project/commit/b1eb90da60dfbb1a42a800260e36815e3edf9eb0))
+* **theme:** open graph and twitter card meta tags ([4fde6c1](https://github.com/IamMrCupp/mrcupp-project/commit/4fde6c1cf4cd89cf34d554c27f08939461df25c9))
+
 ## [1.11.1](https://github.com/IamMrCupp/mrcupp-project/compare/v1.11.0...v1.11.1) (2026-09-21)
 
 
