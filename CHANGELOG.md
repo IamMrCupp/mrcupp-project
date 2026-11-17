@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.13.2](https://github.com/IamMrCupp/mrcupp-project/compare/v1.13.1...v1.13.2) (2026-11-17)
+
+
+### Content
+
+* **resume:** publish the regenerated AGPL resume ([91f859e](https://github.com/IamMrCupp/mrcupp-project/commit/91f859e87f48b3fd2bf4d8e117485d9a8878f63b))
+
 ## [1.13.1](https://github.com/IamMrCupp/mrcupp-project/compare/v1.13.0...v1.13.1) (2026-11-17)
 
 
