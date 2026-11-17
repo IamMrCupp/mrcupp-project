@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.13.0](https://github.com/IamMrCupp/mrcupp-project/compare/v1.12.0...v1.13.0) (2026-11-17)
+
+
+### Features
+
+* **electronics:** send repair work to YOLO Electronics Repair at yolorepair.com ([807447a](https://github.com/IamMrCupp/mrcupp-project/commit/807447ab3cb1b2399a938b4c65d57cec7c4a6b24))
+* **projects:** add burnwright, bench-suite and bench-recon pages ([929b5d9](https://github.com/IamMrCupp/mrcupp-project/commit/929b5d95632a5d51e8fb1aebc5d6390255a27cd3))
+* **projects:** add the PCIe GPU test rig page with parts list ([f9e7b3f](https://github.com/IamMrCupp/mrcupp-project/commit/f9e7b3ffce872bc5c0156f755d31e45af24a6aad))
+* **resume:** add the full bench stack, burnwright and OpenBoardView work ([dc53635](https://github.com/IamMrCupp/mrcupp-project/commit/dc53635c314332daa5af6ff45220762f83d182d8))
+* YOLO Electronics Repair, and the site catches up on the new repos ([446ca3c](https://github.com/IamMrCupp/mrcupp-project/commit/446ca3c1172b33ea3b0ae6ffa894cc9ecdb9ef7d))
+
+
+### Content
+
+* **pcie-gpu-test-rig:** bring the page up to rev D and link the merged enclosure ([63b6db5](https://github.com/IamMrCupp/mrcupp-project/commit/63b6db524eb20e3e08860c455878407c400a4ccb))
+* **post:** a power box for dead GPUs ([5d89226](https://github.com/IamMrCupp/mrcupp-project/commit/5d89226c2e7356203917944d5f82fc5994d88527))
+* **post:** a programmer GUI that isn't Windows-only ([1535713](https://github.com/IamMrCupp/mrcupp-project/commit/1535713c0166722d6c07c0522cb3c918e191f010))
+* **post:** one install for the bench ([a6c4d7c](https://github.com/IamMrCupp/mrcupp-project/commit/a6c4d7cbb4d9a6550243d9931b0269df3a2d7de9))
+* **post:** YOLO Electronics Repair ([0b00eec](https://github.com/IamMrCupp/mrcupp-project/commit/0b00eecba34dbe72c2e5f00a2b9e8c8fbea81143))
+* **projects:** bring the bench apps, OpenBoardView, the kit and the models up to date ([a398337](https://github.com/IamMrCupp/mrcupp-project/commit/a398337d723e79dc3ecd2282ca15584c866c3249))
+
 ## [1.12.0](https://github.com/IamMrCupp/mrcupp-project/compare/v1.11.1...v1.12.0) (2026-09-23)
 
 
