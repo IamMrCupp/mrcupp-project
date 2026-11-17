@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.13.1](https://github.com/IamMrCupp/mrcupp-project/compare/v1.13.0...v1.13.1) (2026-11-17)
+
+
+### Content
+
+* **projects:** the bench apps are open source under AGPL-3.0 ([48ced6b](https://github.com/IamMrCupp/mrcupp-project/commit/48ced6b1e2a8d59077aba86e6acae142e5f455ba))
+
 ## [1.13.0](https://github.com/IamMrCupp/mrcupp-project/compare/v1.12.0...v1.13.0) (2026-11-17)
 
 
