@@ -23,7 +23,10 @@ What it ships:
 - **Lifecycle slash commands** — `/session-start`, `/session-end`, `/session-handoff`,
   `/close-phase`, `/pull-ticket`, `/run-acceptance`, and the rest. Eleven of them, installed
   once globally.
-- **A convention-drift lint** — the newest piece. Working-folder context and auto-memory
+- **Auto-grounding at session start** — the newest piece. A SessionStart hook injects the
+  working folder, current status, the latest session-log entry, lint verdicts, and open PRs
+  before you type anything, so `/session-start` mostly isn't needed anymore.
+- **A convention-drift lint** — working-folder context and auto-memory
   can disagree about the rules (branch base, merge strategy, commit shape), and when they
   do, the assistant picks one at random. The check catches the drift and runs as part of
   `/session-verify`, or as an optional git hook.

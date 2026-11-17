@@ -5,6 +5,10 @@ date: 2026-08-09T01:15:00-07:00
 tags: [ "electronics", "repair", "microsoldering", "bench" ]
 ---
 
+*Update, November 2026: the repair work is its own shop now —
+[YOLO Electronics Repair](/post/2026-11-16-yolo-electronics-repair/), at
+[yolorepair.com](https://yolorepair.com/). Inquiries go to hello@yolorepair.com.*
+
 # Taking work
 
 Short version: I do board-level repair, and I'm taking work.

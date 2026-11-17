@@ -46,7 +46,8 @@ link — it's listed because it's on the bench.*
 
 ### Programming and retro
 - **XGecu T48** with the adapter bundle — EEPROM and ROM programmer, driven by `minipro`
-  from the command line. No Windows required.
+  from the command line, or through [burnwright](/page/burnwright/), the GUI I wrote on top
+  of it. No Windows required.
 - **Jonard IC extractors** for DIPs, and a Gamebit driver for NES, SNES, N64, and Sega carts.
 
 ### Power
@@ -74,11 +75,14 @@ link — it's listed because it's on the bench.*
   [3D Printer Models](/page/3d-printer-models/) and [Snapmaker U1 tooling](/page/snapmaker-u1-tooling/).
 
 ### Custom tooling
-The bench also runs software I'm building for it. [benchhud](/page/benchhud/) pulls the
-microscope feed, the thermal camera, and live instrument readings into one heads-up display —
-so a component's heat bloom labels the component, and the meter reading sits right next to
-the work instead of across the desk. [bench-parts](/page/bench-parts/) is the inventory
-behind it, and [benchhud-intake](/page/benchhud-intake/) is the front door.
+The bench also runs software I wrote for it, all public now. [benchhud](/page/benchhud/) pulls
+the microscope feed, the thermal camera, and live instrument readings into one heads-up
+display — so a component's heat bloom labels the component, and the meter reading sits right
+next to the work instead of across the desk. [bench-parts](/page/bench-parts/) is the
+inventory behind it, [benchhud-intake](/page/benchhud-intake/) is the front door, and
+[bench-recon](/page/bench-recon/) keeps the pentest work separate. [bench-suite](/page/bench-suite/)
+installs all four and wires them together. [burnwright](/page/burnwright/) is the GUI I
+wrote for the T48, because the vendor's software doesn't run on anything but Windows.
 
 For graphics cards there's the [PCIe GPU test rig](/page/pcie-gpu-test-rig/) — a metered, fused
 12 V box that runs a card on a riser with no motherboard, so the first read on a dead card comes

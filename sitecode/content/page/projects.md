@@ -19,19 +19,30 @@ I'm working on.
   lighting rig. Drive Hue, WLED, Art-Net, and lasers from one place.
 
 ### Electronics & repair
+The repair work itself runs as [YOLO Electronics Repair](https://yolorepair.com/). These are
+the tools behind it — the bench apps are public, source-available under PolyForm Small
+Business.
+
 - [benchhud](/page/benchhud/) — a heads-up display for the microsoldering bench: scope,
-  thermal fusion, and instrument telemetry in one window, composited straight into a stream.
-- [bench-parts](/page/bench-parts/) — self-hosted parts inventory, with a REST API benchhud
-  reads so stock shows up on the HUD. Running on the cluster.
+  thermal fusion, instrument telemetry, flash dumps, and known-good comparisons in one
+  window, composited straight into a stream.
+- [bench-parts](/page/bench-parts/) — self-hosted parts and test-gear inventory, with a REST
+  API benchhud reads so stock shows up on the HUD.
 - [benchhud-intake](/page/benchhud-intake/) — the front door for work coming in, and the
   reason customer data lives nowhere near the thing that streams.
+- [bench-recon](/page/bench-recon/) — the system of record for hardware pentest engagements.
+  LAN-only, installs switched off, and benchhud only ever sees a ref.
+- [bench-suite](/page/bench-suite/) — one install for all four: an apt metapackage and a
+  setup command that wires them to each other.
+- [burnwright](/page/burnwright/) — an open-source GUI for XGecu chip programmers, on macOS
+  and Linux as well as Windows.
 - [PCIe GPU Test Rig](/page/pcie-gpu-test-rig/) — a fused, switched, metered 12 V box for running a
   graphics card on the bench with no motherboard. Public schematic and wiring guide.
-- [OpenBoardView](/page/openboardview/) — not mine, but I patched it: board-to-schematic
-  cross-probing that never worked on macOS, now does.
+- [OpenBoardView](/page/openboardview/) — not mine, but I keep patching it: macOS
+  cross-probing, KiCad and `.bv` board import, and parser fixes, all sent upstream.
 
 ### 3D printing & making
-- [3D Printer Models](/page/3d-printer-models/) — thirty printable models, kept as source
+- [3D Printer Models](/page/3d-printer-models/) — thirty-eight printable models, kept as source
   so you can regenerate them, not just download a fixed STL. Most of them hold the bench
   together.
 - [Clickfinity (OpenSCAD)](/page/clickfinity-openscad/) — magnet-free Gridfinity

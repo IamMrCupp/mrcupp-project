@@ -14,7 +14,9 @@ generates them. Models are authored in OpenSCAD, so **the STL is an output, not 
 artifact.** Need it 20&nbsp;mm wider? Change a variable and re-render, instead of hunting for
 someone's remix at a size that happens to fit.
 
-Thirty models live here now, and most of them hold the repair bench together. The
+Thirty-eight models live here now, and most of them hold the repair bench together.
+The newest arrivals: a rotating tool carousel, a chip vacuum, a fixture rack, feet for the
+helping hands, and the enclosure for the [PCIe GPU test rig](/page/pcie-gpu-test-rig/). The
 bench got reorganized onto Gridfinity over the summer, and nearly everything on it that
 isn't an instrument is a print from this repo:
 
@@ -52,5 +54,9 @@ and remix with attribution, just not commercially — while the parametric libra
 tooling are MIT, because Creative Commons themselves recommend against CC licenses for
 software. Every source file carries an SPDX header, so the split travels with the file if
 you vendor it.
+
+Some of them are going up on Thingiverse too — pushed by a script straight from the
+CI-built release, never from a local render, so the file there is the same one that passed
+the mesh check.
 
 Designed on a Snapmaker U1, but most of it ports to any FDM printer.
