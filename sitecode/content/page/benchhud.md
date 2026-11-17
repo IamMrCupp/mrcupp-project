@@ -5,11 +5,12 @@ comments: false
 ---
 
 ### Links
-- Source: [github.com/IamMrCupp/benchhud](https://github.com/IamMrCupp/benchhud) —
-  source-available under the PolyForm Small Business License
+- Source: [github.com/IamMrCupp/benchhud](https://github.com/IamMrCupp/benchhud)
+  (AGPL-3.0-or-later)
 - Downloads: [GitHub releases](https://github.com/IamMrCupp/benchhud/releases) — Ubuntu
-  `.deb` and Windows `.msi`; macOS builds from source
+  `.deb`, Windows `.msi`, and a signed, notarized macOS `.dmg` (Apple silicon)
 - Installs with the rest of the bench stack via [bench-suite](/page/bench-suite/)
+- Runs on the bench at [YOLO Electronics Repair](https://yolorepair.com/)
 - How it fits with the rest of the bench stack: [Three Services, One Privacy Boundary](/post/2026-08-10-bench-stack-privacy-boundary/)
 
 ### About

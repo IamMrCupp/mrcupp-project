@@ -86,3 +86,6 @@ advertises `linux/arm64` — the build succeeding was never the thing worth veri
 
 Both are source-available under PolyForm Small Business: free for personal use and small
 shops, commercial license above that.
+
+*Update, November 2026: all of the bench apps are public now, and open source under
+AGPL-3.0-or-later — the story is in [One Install for the Bench](/post/2026-11-16-bench-suite/).*
