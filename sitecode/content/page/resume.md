@@ -136,15 +136,23 @@ engineering and led directly back into infrastructure work.
   lifecycle commands, backed by a Bats test suite, CI, and ADRs. Adopted for personal and
   day-job delivery.
 - **The bench stack** (Python) — [benchhud](/page/benchhud/),
-  [bench-parts](/page/bench-parts/), and [benchhud-intake](/page/benchhud-intake/): an
-  OpenCV / v4l2loopback compositor fusing microscope, thermal-imaging, and instrument
-  telemetry into a single live video feed, backed by a separate self-hosted inventory
-  service whose REST API the HUD and an intake service both consume. The services are
-  test-first (585 tests) and deploy to a multi-arch Raspberry Pi Kubernetes cluster via
-  Flux GitOps with image automation; customer data is isolated from the streaming path by
-  design.
+  [benchhud-intake](/page/benchhud-intake/), [bench-parts](/page/bench-parts/),
+  [bench-recon](/page/bench-recon/), and [bench-suite](/page/bench-suite/): an OpenCV /
+  v4l2loopback compositor fusing microscope, thermal-imaging, and instrument telemetry into
+  a single live video feed, plus self-hosted intake, inventory, and pentest-engagement
+  services it consumes over REST. Source-available; test-first (2,600+ tests); ships
+  `.deb` / `.msi` / tray-app releases and multi-arch images, with an apt metapackage and
+  setup tool that wires the stack together. Runs on a multi-arch Raspberry Pi Kubernetes
+  cluster via Flux GitOps with image automation; customer and client data is isolated from
+  the streaming path by design.
+- **[burnwright](/page/burnwright/)** (Rust / Tauri) — open-source cross-platform desktop
+  app for XGecu universal chip programmers, built on the minipro engine. macOS, Linux, and
+  Windows installers with a bundled engine and chip databases.
+- **[OpenBoardView](/page/openboardview/)** (C++) — upstream contributions to the
+  open-source board viewer: a macOS PDF cross-probing backend, KiCad and legacy `.bv` board
+  import, and parser hardening across four file formats.
 - **[3D Printer Models](/page/3d-printer-models/)** and
-  **[Clickfinity](/page/clickfinity-openscad/)** (OpenSCAD) — thirty parametric models with
+  **[Clickfinity](/page/clickfinity-openscad/)** (OpenSCAD) — thirty-eight parametric models with
   CI-validated meshes and per-model releases, plus a clean-room magnet-free Gridfinity
   baseplate generator.
 - **[recipe-card-maker](/page/recipe-card-maker/)** (Python / SvelteKit) — FastAPI backend,
