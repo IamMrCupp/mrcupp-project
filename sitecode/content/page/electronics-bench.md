@@ -79,3 +79,7 @@ microscope feed, the thermal camera, and live instrument readings into one heads
 so a component's heat bloom labels the component, and the meter reading sits right next to
 the work instead of across the desk. [bench-parts](/page/bench-parts/) is the inventory
 behind it, and [benchhud-intake](/page/benchhud-intake/) is the front door.
+
+For graphics cards there's the [PCIe GPU test rig](/page/pcie-gpu-test-rig/) — a metered, fused
+12 V box that runs a card on a riser with no motherboard, so the first read on a dead card comes
+from an ammeter instead of a PC.

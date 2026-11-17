@@ -25,6 +25,8 @@ I'm working on.
   reads so stock shows up on the HUD. Running on the cluster.
 - [benchhud-intake](/page/benchhud-intake/) — the front door for work coming in, and the
   reason customer data lives nowhere near the thing that streams.
+- [PCIe GPU Test Rig](/page/pcie-gpu-test-rig/) — a fused, switched, metered 12 V box for running a
+  graphics card on the bench with no motherboard. Public schematic and wiring guide.
 - [OpenBoardView](/page/openboardview/) — not mine, but I patched it: board-to-schematic
   cross-probing that never worked on macOS, now does.
 
