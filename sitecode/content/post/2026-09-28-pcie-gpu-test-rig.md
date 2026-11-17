@@ -80,8 +80,7 @@ scrapped in August. An assembly check that renders every part against every othe
 lip hanging across an opening that the per-part checks were perfectly happy with.
 
 The enclosure lives with the other models, in
-[3d-printer-models](https://github.com/IamMrCupp/3d-printer-models/pull/165) — it's in review
-until the coupons have been on the bench.
+[3d-printer-models](https://github.com/IamMrCupp/3d-printer-models/tree/main/pcie-rig-enclosure).
 
 ## Honest limits
 

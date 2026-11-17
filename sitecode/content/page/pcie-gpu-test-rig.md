@@ -7,7 +7,7 @@ image: img/posts/pcie-gpu-test-rig/enclosure.jpg
 
 ### Links
 - Schematic + wiring guide: [github.com/IamMrCupp/pcie-gpu-test-rig](https://github.com/IamMrCupp/pcie-gpu-test-rig) (MIT)
-- Printed enclosure: [3d-printer-models → pcie-rig-enclosure](https://github.com/IamMrCupp/3d-printer-models/pull/165) (in review)
+- Printed enclosure: [3d-printer-models → pcie-rig-enclosure](https://github.com/IamMrCupp/3d-printer-models/tree/main/pcie-rig-enclosure)
 - Write-up: [A Power Box for Dead GPUs](/post/2026-09-28-pcie-gpu-test-rig/)
 
 ### About
@@ -20,7 +20,10 @@ into current limit instead of taking anything with it.
 and the card, banana pairs for probing, and a probe-ground post on the card's return bus. The bench
 supply is the protection — 12.0 V, OVP 12.6 V, 6 A limit. Never an ATX or server supply.
 
-![Rev C wiring schematic](/img/posts/pcie-gpu-test-rig/schematic.png)
+Rev D, the current one, makes every join inside a WAGO lever nut — no solder, and no
+terminal with two wires on it.
+
+![Rev D wiring schematic](/img/posts/pcie-gpu-test-rig/schematic-rev-d.png)
 
 ### Parts
 
@@ -34,8 +37,13 @@ supply is the protection — 12.0 V, OVP 12.6 V, 6 A limit. Never an ATX or serv
 | {{< amzn B08LN5T9D7 "4 mm binding posts" >}} | inputs, outputs, and the probe-ground post |
 | {{< amzn B07QBF2X6C "Kingwin PCIe x1 → x16 riser kit" >}} | only the x16 slot board is used |
 | XT60E-M / XT60E-F panel connectors | keyed input and outputs |
-| WAGO 221-415 lever nut | the ground bus |
+| WAGO 221-413 lever nuts (×2) | the input pair |
+| WAGO 221-415 lever nuts (×2) | the switched + bus and the ground bus |
 | 14 AWG silicone wire, spades, ferrules | 14 AWG on every 12 V and ground run |
 
-The full wire-by-wire list, lead builds, and the pre-power checklist are in
+The full parts list is in
+[BOM.md](https://github.com/IamMrCupp/pcie-gpu-test-rig/blob/master/BOM.md), the build
+procedure, continuity table, and first power-up in
+[BUILD.md](https://github.com/IamMrCupp/pcie-gpu-test-rig/blob/master/BUILD.md), and the
+wire-by-wire reference in
 [WIRING.md](https://github.com/IamMrCupp/pcie-gpu-test-rig/blob/master/WIRING.md).
