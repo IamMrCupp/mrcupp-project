@@ -5,8 +5,10 @@ comments: false
 ---
 
 ### Links
-- Source: private for now. Builds will be posted here as downloads while I settle how the
-  source gets shared.
+- Source: [github.com/IamMrCupp/bench-parts](https://github.com/IamMrCupp/bench-parts)
+- Downloads: [GitHub releases](https://github.com/IamMrCupp/bench-parts/releases) — a
+  `.deb` service plus tray apps for macOS and Windows
+- Installs with the rest of the bench stack via [bench-suite](/page/bench-suite/)
 
 ### About
 Knowing you have the part is half of quoting a repair. bench-parts is the inventory that
@@ -29,7 +31,13 @@ low on IRF7910" — while it's compositing to a live stream. Consumption links t
 reference string only, and this service never calls
 [intake](/page/benchhud-intake/) to resolve it. The boundary is the point.
 
-Python and FastAPI, SQLite, deployed to a Raspberry Pi cluster over Flux. Multi-arch images,
+It's grown a second register, too: **test gear.** An asset catalogue for the instruments
+themselves — check a scope or a probe out, check it back in, and see where everything is —
+with the same JSON API. And printable QR drawer labels, with a CLI that sends them straight
+to a Niimbot D110 label printer.
+
+Python and FastAPI, SQLite. It installs as a `.deb` service on `127.0.0.1:8402`, a tray app,
+or a container; mine runs on a Raspberry Pi cluster over Flux. Multi-arch images,
 with CI asserting the published manifest actually advertises `linux/arm64` — an amd64-only
 build is invisible until the pod refuses to schedule.
 

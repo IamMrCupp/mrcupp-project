@@ -7,11 +7,23 @@ comments: false
 ### Links
 - Upstream: [github.com/OpenBoardView/OpenBoardView](https://github.com/OpenBoardView/OpenBoardView)
 - My fork: [github.com/IamMrCupp/OpenBoardView](https://github.com/IamMrCupp/OpenBoardView)
-- The contribution: [PR #363](https://github.com/OpenBoardView/OpenBoardView/pull/363)
+- The contributions, all open upstream:
+  - [#363](https://github.com/OpenBoardView/OpenBoardView/pull/363) — macOS PDF bridge
+    (Skim), the one this page is about
+  - [#381](https://github.com/OpenBoardView/OpenBoardView/pull/381) — open KiCad
+    `.kicad_pcb` boards directly
+  - [#386](https://github.com/OpenBoardView/OpenBoardView/pull/386) — open legacy `.bv`
+    boards directly
+  - [#376](https://github.com/OpenBoardView/OpenBoardView/pull/376),
+    [#377](https://github.com/OpenBoardView/OpenBoardView/pull/377),
+    [#378](https://github.com/OpenBoardView/OpenBoardView/pull/378),
+    [#379](https://github.com/OpenBoardView/OpenBoardView/pull/379) — parser fixes for
+    GenCAD, ASC, XZZ, and CAD files that aborted or misread instead of loading
 
 ### About
-This one isn't mine — it's someone else's project I depend on, and a patch I wrote because
-I needed it.
+This one isn't mine — it's someone else's project I depend on, and a few patches I wrote
+because I needed them. It started with one and kept going: every board file that wouldn't
+open on the bench turned into a fix.
 
 OpenBoardView reads `.brd` board files: tap a part, see its pins, nets, and neighbours. It's
 the free replacement for the Test_Link and Landrex tools, and it's what sits open next to
