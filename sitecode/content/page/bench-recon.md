@@ -6,9 +6,10 @@ comments: false
 
 ### Links
 - Source: [github.com/IamMrCupp/bench-recon](https://github.com/IamMrCupp/bench-recon)
-  (PolyForm Small Business 1.0.0)
+  (AGPL-3.0-or-later)
 - Image: `ghcr.io/iammrcupp/bench-recon` (linux/amd64, linux/arm64)
 - Part of [bench-suite](/page/bench-suite/)
+- Runs on the bench at [YOLO Electronics Repair](https://yolorepair.com/)
 
 ### About
 Repair isn't the only thing that happens at the bench. Hardware, automotive, and IoT

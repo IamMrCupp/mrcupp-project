@@ -6,9 +6,11 @@ comments: false
 
 ### Links
 - Source: [github.com/IamMrCupp/benchhud-intake](https://github.com/IamMrCupp/benchhud-intake)
+  (AGPL-3.0-or-later)
 - Downloads: [GitHub releases](https://github.com/IamMrCupp/benchhud-intake/releases) —
   a `.deb` systemd service (amd64 and arm64), plus tray apps for macOS and Windows
 - Installs with the rest of the bench stack via [bench-suite](/page/bench-suite/)
+- Runs on the bench at [YOLO Electronics Repair](https://yolorepair.com/)
 
 ### About
 The front door for work arriving at the bench. A tablet-friendly web form for taking a job
@@ -36,5 +38,5 @@ recreate strategy.
 
 Python and FastAPI. It runs however your bench does — a sandboxed `.deb` service on
 `127.0.0.1:8401`, a tray app, a container from the compose file, or a kustomize base for
-Kubernetes. Mine runs on a Raspberry Pi cluster over Flux. Source-available under the
-PolyForm Small Business License.
+Kubernetes. Mine runs on a Raspberry Pi cluster over Flux. Open source under
+AGPL-3.0-or-later.

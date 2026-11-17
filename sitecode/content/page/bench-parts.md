@@ -6,9 +6,11 @@ comments: false
 
 ### Links
 - Source: [github.com/IamMrCupp/bench-parts](https://github.com/IamMrCupp/bench-parts)
+  (AGPL-3.0-or-later)
 - Downloads: [GitHub releases](https://github.com/IamMrCupp/bench-parts/releases) — a
   `.deb` service plus tray apps for macOS and Windows
 - Installs with the rest of the bench stack via [bench-suite](/page/bench-suite/)
+- Runs on the bench at [YOLO Electronics Repair](https://yolorepair.com/)
 
 ### About
 Knowing you have the part is half of quoting a repair. bench-parts is the inventory that
@@ -41,5 +43,5 @@ or a container; mine runs on a Raspberry Pi cluster over Flux. Multi-arch images
 with CI asserting the published manifest actually advertises `linux/arm64` — an amd64-only
 build is invisible until the pod refuses to schedule.
 
-Source-available under the PolyForm Small Business License: free for personal use and small
-shops, commercial license above that.
+Open source under AGPL-3.0-or-later — use it, change it, run it. If you run a modified build
+as a service other people use, your changes go out under the same license.

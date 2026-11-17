@@ -20,8 +20,7 @@ I'm working on.
 
 ### Electronics & repair
 The repair work itself runs as [YOLO Electronics Repair](https://yolorepair.com/). These are
-the tools behind it — the bench apps are public, source-available under PolyForm Small
-Business.
+the tools behind it — the bench apps are open source under AGPL-3.0.
 
 - [benchhud](/page/benchhud/) — a heads-up display for the microsoldering bench: scope,
   thermal fusion, instrument telemetry, flash dumps, and known-good comparisons in one
@@ -32,8 +31,8 @@ Business.
   reason customer data lives nowhere near the thing that streams.
 - [bench-recon](/page/bench-recon/) — the system of record for hardware pentest engagements.
   LAN-only, installs switched off, and benchhud only ever sees a ref.
-- [bench-suite](/page/bench-suite/) — one install for all four: an apt metapackage and a
-  setup command that wires them to each other.
+- [bench-suite](/page/bench-suite/) — one install for all four: a signed apt repo, a Homebrew
+  tap, and a setup command that wires them to each other.
 - [burnwright](/page/burnwright/) — an open-source GUI for XGecu chip programmers, on macOS
   and Linux as well as Windows.
 - [PCIe GPU Test Rig](/page/pcie-gpu-test-rig/) — a fused, switched, metered 12 V box for running a

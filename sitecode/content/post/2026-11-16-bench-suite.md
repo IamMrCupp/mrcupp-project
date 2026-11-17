@@ -10,14 +10,13 @@ tags: [ "benchhud", "electronics", "repair", "self-hosted", "packaging", "projec
 For most of this year the bench software had the same line on every page: *source private
 for now, while I settle how it gets shared.* It's settled. **[benchhud](/page/benchhud/),
 [benchhud-intake](/page/benchhud-intake/), and [bench-parts](/page/bench-parts/) are public
-repos now**, under the PolyForm Small Business license.
+repos now**, open source under the AGPL, version 3 or later.
 
-That license is a deliberate middle ground. It's free for individuals and for any shop under
-100 people and $1M a year — which is every independent repair bench I can think of — and it
-asks for a commercial license above that. I wanted another one-person bench to be able to
-pick this up, read it, change it, and run it without asking. I didn't want a chain to pick
-it up and resell it. **Source-available, not open source** — and I'd rather say that plainly
-than blur it.
+The AGPL is the strong end of copyleft, and that's the point. I wanted another one-person
+bench to be able to pick this up, read it, change it, and run it without asking anyone. What
+nobody gets to do is take it closed — ship a modified build, or run one as a service other
+people use, and the changes go out under the same license. A chain that wants to resell it
+shares alike, or asks me about a commercial license. **Open source, with teeth.**
 
 ## A fourth app: bench-recon
 

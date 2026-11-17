@@ -35,6 +35,14 @@ It's early, but it runs:
 - **Linux udev rules** ship with the `.deb`, so a plugged-in programmer just works. The
   AppImage needs them copied in once.
 
+### What's next
+The screen for read, write, and verify comes first. After that, the bigger one:
+**open-source EC flashing for laptop repair**
+([#36](https://github.com/IamMrCupp/burnwright/issues/36)). Reflashing a laptop's embedded
+controller in-circuit means a closed, Windows-only jig today. The plan is pluggable backends
+behind the same screens — flashrom over EDI for the ENE KB9012 family, the open ITE
+toolchain for ITE parts — with a backup forced before every write.
+
 ### The T76 on Apple Silicon
 One finding worth repeating: on Apple Silicon Macs the T76 only answers over USB 2.0. On a
 USB 3 cable it links at 5 Gb/s, shows up in System Information, and then never answers a

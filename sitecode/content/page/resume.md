@@ -140,7 +140,7 @@ engineering and led directly back into infrastructure work.
   [bench-recon](/page/bench-recon/), and [bench-suite](/page/bench-suite/): an OpenCV /
   v4l2loopback compositor fusing microscope, thermal-imaging, and instrument telemetry into
   a single live video feed, plus self-hosted intake, inventory, and pentest-engagement
-  services it consumes over REST. Source-available; test-first (2,600+ tests); ships
+  services it consumes over REST. Open source (AGPL-3.0); test-first (2,600+ tests); ships
   `.deb` / `.msi` / tray-app releases and multi-arch images, with an apt metapackage and
   setup tool that wires the stack together. Runs on a multi-arch Raspberry Pi Kubernetes
   cluster via Flux GitOps with image automation; customer and client data is isolated from
