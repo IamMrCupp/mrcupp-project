@@ -102,6 +102,11 @@ menu:
       name: Streaming
       url: page/electronics-streaming/
       weight: 4
+    # External: the repair business has its own site. Absolute URL passes through relURL untouched.
+    - parent: electronics
+      name: YOLO Electronics Repair ↗
+      url: https://yolorepair.com/
+      weight: 5
     - identifier: projects
       name: Projects
       url: page/projects/
