@@ -62,6 +62,8 @@ the tools behind it — the bench apps are open source under AGPL-3.0.
 ### Chat & bots
 - [annoybots](/page/annoybots/) — the eggdrop and BMotion era rebuilt as one Go binary:
   IRC, Twitch, and Discord at once, with a Markov brain that still babbles.
+- [multichat](/page/multichat/) — a fork, not mine: megarohas's merged Twitch and YouTube
+  chat overlay, plus a reply dock I added so both chats get answered from one box.
 - [pwnagotchi plugins](/page/pwnagotchi-plugins/) — two small plugins for the little
   Wi-Fi-handshake Tamagotchi: an age readout the current image lost, and a pcap cleaner.
 

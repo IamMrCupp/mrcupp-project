@@ -5,6 +5,10 @@ date: 2026-11-16T09:00:00-08:00
 tags: [ "electronics", "repair", "burnwright", "rust", "tauri", "projects" ]
 ---
 
+*Update, November 20: the device screen landed that same night — chip picker, read,
+verify, write, and erase, all in the app. It still hasn't touched a real chip, so
+[the project page](/page/burnwright/) has what's new and how to help test it.*
+
 # The chip on every board
 
 A lot of board repair ends at a flash chip. A laptop that won't POST after a bad BIOS
