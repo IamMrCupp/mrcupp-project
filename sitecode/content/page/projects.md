@@ -56,8 +56,8 @@ the tools behind it — the bench apps are open source under AGPL-3.0.
   catches convention drift.
 - [apptracker](/page/apptracker/) — self-hosted job-hunt tracking that lives in your
   cluster instead of one browser's local storage.
-- [recipe-card-maker](/page/recipe-card-maker/) — markdown recipes in, printable binder
-  pages and tin cards out.
+- [recipe-card-maker](/page/recipe-card-maker/) — recipes in, typed or imported from a
+  link, a photo, or a post; printable binder pages and tin cards out.
 
 ### Chat & bots
 - [annoybots](/page/annoybots/) — the eggdrop and BMotion era rebuilt as one Go binary:
