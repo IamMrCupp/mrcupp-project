@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.14.1](https://github.com/IamMrCupp/mrcupp-project/compare/v1.14.0...v1.14.1) (2026-11-21)
+
+
+### Content
+
+* **projects:** apptracker's follow-ups, LinkedIn capture and desktop mode ([a5ed8f9](https://github.com/IamMrCupp/mrcupp-project/commit/a5ed8f92f7a37ffab10fc744b7cfe02aa80a250d))
+* **projects:** recipe-card-maker's app, importers and printing options ([bb43e32](https://github.com/IamMrCupp/mrcupp-project/commit/bb43e32d055699bafe95874d85ddde91e897d160))
+
 ## [1.14.0](https://github.com/IamMrCupp/mrcupp-project/compare/v1.13.2...v1.14.0) (2026-11-21)
 
 
