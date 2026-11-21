@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.14.0](https://github.com/IamMrCupp/mrcupp-project/compare/v1.13.2...v1.14.0) (2026-11-21)
+
+
+### Features
+
+* **projects:** add the multichat fork and its reply dock ([d29da6e](https://github.com/IamMrCupp/mrcupp-project/commit/d29da6ed2809457b48179ce5423ba17a32d338a1))
+
+
+### Content
+
+* **projects:** burnwright's device screen and T76 file, benchhud's Windows camera and job commands ([739d8d7](https://github.com/IamMrCupp/mrcupp-project/commit/739d8d7e01a656b57ed9017a4db10d5a6ba4f520))
+
 ## [1.13.2](https://github.com/IamMrCupp/mrcupp-project/compare/v1.13.1...v1.13.2) (2026-11-17)
 
 
