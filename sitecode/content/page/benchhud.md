@@ -40,9 +40,12 @@ The panels that matter:
 - **Repair jobs** — a local-first log of what's on the bench. One button attaches the
   current scope frame, thermal frame, and meter readings to the job timeline; an
   over-current trip logs itself. Export a customer-facing report when the job's done.
+  `benchhud job new`, `select`, and `set` do the same from a terminal, so the job card on
+  stream doesn't need a walk to the bench.
 - **Ticket import** — optionally pull the open queue from
   [intake](/page/benchhud-intake/) and drop a ticket onto the bench as a job. Runs
-  standalone without one.
+  standalone without one. When intake or [bench-parts](/page/bench-parts/) runs on the
+  same machine, **Find on this machine** in Preferences fills in its address.
 - **Board docs** — a local library of board-view files keyed by part number, opened in
   OpenBoardView or FlexBV. "Do I have this board?" answered from the job, or across the
   whole open queue as a boards-to-source list.
@@ -58,5 +61,10 @@ streams, not just my own bench.
 
 Status, honestly: **running on the bench.** Scope capture, the thermal overlay with real
 temperatures, and virtual-camera output into OBS all run on Ubuntu, and macOS virtual-camera
-output is verified on real hardware too. Windows virtual-camera output isn't built yet.
-Releases land often — expect the odd rough edge.
+output is verified on real hardware too. Windows has a virtual camera now as well — the
+installer ships and registers one — and on CI's Windows runner a DirectShow reader gets the
+HUD's picture back byte for byte. No Windows bench has run it yet, and nobody has watched it
+in OBS there. Releases land often — expect the odd rough edge.
+
+It also matches [burnwright](/page/burnwright/) now — same palette, same panel look — so
+the two desktop apps on the bench read as one kit.
