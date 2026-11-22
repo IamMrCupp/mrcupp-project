@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.2](https://github.com/IamMrCupp/mrcupp-project/compare/v1.14.1...v1.14.2) (2026-11-22)
+
+
+### Content
+
+* **projects:** burnwright's Laptop EC backup and themes, benchhud's OBS scenes ([fcbf3ac](https://github.com/IamMrCupp/mrcupp-project/commit/fcbf3acf4b496ad72d0372f5ab04117438960c3b))
+
 ## [1.14.1](https://github.com/IamMrCupp/mrcupp-project/compare/v1.14.0...v1.14.1) (2026-11-21)
 
 
