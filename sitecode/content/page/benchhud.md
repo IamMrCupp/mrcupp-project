@@ -55,8 +55,10 @@ The panels that matter:
   different chips. It reads offline from folders I keep, my own notes on top of shared
   data. benchhud ships no chip data and downloads nothing. When my data draws a blank,
   Find chip hands the mark to a marking site in the browser, on a click only. Picking a
-  part in inventory shows the same details, and a chip card can go on stream: the part,
-  its package, and its marks, never the notes.
+  part in inventory shows the same details. A click on **Show on stream card**, there or
+  in Find chip, puts the chip on a card for the stream: the part, its package, and its
+  marks, never the notes. A source I keep for myself can be held off air, so the card
+  never reads it.
   [How it works](https://github.com/IamMrCupp/benchhud/blob/main/docs/CHIPS.md).
 - **Tool launcher** — one-click into the repair tools already on the machine, from a dock
   along the bottom of the window.

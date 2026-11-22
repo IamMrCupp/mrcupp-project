@@ -38,7 +38,8 @@ It's early, but there's a real screen now:
 - **Linux udev rules** ship with the `.deb`, for the XGecu programmers and the CH341A, so a
   plugged-in programmer just works. The AppImage needs them copied in once.
 - **Light and dark**, following the system or held to one. You can also drop your own
-  colour themes into a folder as small JSON files.
+  colour themes into a folder as small JSON files, and **Save as theme** starts one from
+  whatever look is on screen.
 
 **One honest caveat:** the chip side of all that is tested against a fake minipro. burnwright hasn't read
 or written a real chip yet, so treat a write as unproven until it has. It's main (code)
