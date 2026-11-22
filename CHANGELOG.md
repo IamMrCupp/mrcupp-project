@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.5](https://github.com/IamMrCupp/mrcupp-project/compare/v1.14.4...v1.14.5) (2026-11-22)
+
+
+### Content
+
+* **projects:** benchhud's off-air chip sources, burnwright's Save as theme ([158dd21](https://github.com/IamMrCupp/mrcupp-project/commit/158dd21988c3121854b76b2d3a03f367fffd5e98))
+
 ## [1.14.4](https://github.com/IamMrCupp/mrcupp-project/compare/v1.14.3...v1.14.4) (2026-11-22)
 
 
