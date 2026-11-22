@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.3](https://github.com/IamMrCupp/mrcupp-project/compare/v1.14.2...v1.14.3) (2026-11-22)
+
+
+### Content
+
+* **projects:** burnwright's stream page and hidden file paths ([1deff76](https://github.com/IamMrCupp/mrcupp-project/commit/1deff768cc4230bfdc711f3c425a932a65fe491f))
+
 ## [1.14.2](https://github.com/IamMrCupp/mrcupp-project/compare/v1.14.1...v1.14.2) (2026-11-22)
 
 
