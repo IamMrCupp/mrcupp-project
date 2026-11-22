@@ -35,10 +35,12 @@ It's early, but there's a real screen now:
   or all-zeros chip ID gets called what it usually is: no chip in the socket.
 - **A hex editor**, virtualised so a big image doesn't choke it. Raw binary and Intel HEX
   load and save, and it asks before a read you never saved gets thrown away.
-- **Linux udev rules** ship with the `.deb`, so a plugged-in programmer just works. The
-  AppImage needs them copied in once.
+- **Linux udev rules** ship with the `.deb`, for the XGecu programmers and the CH341A, so a
+  plugged-in programmer just works. The AppImage needs them copied in once.
+- **Light and dark**, following the system or held to one. You can also drop your own
+  colour themes into a folder as small JSON files.
 
-**One honest caveat:** all of that is tested against a fake minipro. burnwright hasn't read
+**One honest caveat:** the chip side of all that is tested against a fake minipro. burnwright hasn't read
 or written a real chip yet, so treat a write as unproven until it has. It's main (code)
 memory only for now — no EEPROM data memory, no fuses.
 
@@ -53,18 +55,32 @@ says when a write test is safe, and
 is where each confirmed chip goes, with your name on it. It's empty right now. Yours could
 be the first row.
 
-### What's next
-**Open-source EC flashing for laptop repair**
-([#36](https://github.com/IamMrCupp/burnwright/issues/36)). Reflashing a laptop's embedded
-controller in-circuit means a closed, Windows-only jig today. The plan is pluggable backends
-behind the same screens — flashrom over EDI for the ENE KB9012 family, the open ITE
-toolchain for ITE parts — with a backup forced before every write.
+### Laptop ECs: backup first
+Reflashing a laptop's embedded controller in-circuit means a closed, Windows-only jig today.
+**Open-source EC flashing** ([#36](https://github.com/IamMrCupp/burnwright/issues/36)) is
+the bigger goal, and the first piece is in: a second bench, **Laptop EC**, that backs one up
+with the chip still on the board.
 
-The groundwork is on main. The engine has a backend layer now, and every read and write
-goes through it, with a rule that a write needs a backup first. That backup is two reads that
-have to match on an in-circuit chip, saved with a hash and checked back. A chip in the socket
-can still skip it after you confirm, which keeps today's minipro behaviour. An EC can't skip
-it at all — a half-written EC is a board that won't start.
+One chip so far — the ENE KB9012, over its EDI debug port, with a CH341A and
+[flashrom](https://flashrom.org), which you install yourself. Look for the CH341A, identify
+the chip, back it up. The backup reads the whole flash twice and only saves it if the two
+reads match, because a read that wanders means a loose wire or an EC that's still running,
+and a bad backup is worse than none. Before it'll talk to the chip, the bench makes you tick
+off the wiring it can't check for you — including the common black CH341A, whose data lines
+sit near 5 V whatever the jumper says. That can kill an EC.
+
+**It reads. It doesn't write.** There's no button for it and no code behind one. Writing
+waits until the backup is mandatory and proven, because a half-written EC is a board that
+won't start. And like everything else here, nobody's run it on a real KB9012 yet — it's
+tested against a stand-in that replays what flashrom prints.
+[What you need, and the wiring](https://github.com/IamMrCupp/burnwright/blob/main/docs/ec-backup.md).
+
+### What's next
+Writing an EC, once a backup is proven on real boards, and more chips behind the same
+screens, like the open ITE toolchain for ITE parts. The engine is ready for
+it: every read and write already goes through one backend layer, with a rule that a write
+needs a backup first. A chip in the socket can skip that after you confirm, which keeps
+today's minipro behaviour. An EC can't skip it at all.
 
 ### The T76
 The T76 runs on its own bundled build of minipro, newer than the one the other programmers

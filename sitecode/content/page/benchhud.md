@@ -49,7 +49,14 @@ The panels that matter:
 - **Board docs** — a local library of board-view files keyed by part number, opened in
   OpenBoardView or FlexBV. "Do I have this board?" answered from the job, or across the
   whole open queue as a boards-to-source list.
-- **Tool launcher** — one-click into the repair tools already on the machine.
+- **Tool launcher** — one-click into the repair tools already on the machine, from a dock
+  along the bottom of the window.
+- **OBS scenes** — tools with windows of their own, like PulseView or OpenBoardView, each
+  get a scene on stream. The Tools dock shows which scene is live and switches it, so
+  showing a tool doesn't mean a trip to OBS and back. Optionally, a tool brings its own
+  scene up when it starts and hands the old one back when it exits — unless someone changed
+  the scene by hand in the meantime. Off until you turn it on, since it changes what's on
+  air. OBS still builds the scenes; benchhud only picks one.
 - **Terminal** — a shell in a panel, and optionally on stream as a read-only source with a
   pause button for anything private.
 
