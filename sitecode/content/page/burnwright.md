@@ -75,6 +75,21 @@ won't start. And like everything else here, nobody's run it on a real KB9012 yet
 tested against a stand-in that replays what flashrom prints.
 [What you need, and the wiring](https://github.com/IamMrCupp/burnwright/blob/main/docs/ec-backup.md).
 
+### On stream
+burnwright is built for the same streamed bench as [benchhud](/page/benchhud/), so it can go
+on air without showing what it shouldn't.
+
+- **A stream page.** burnwright serves a small card for OBS to load as a browser source:
+  the programmer, the chip, the operation, and a progress bar, on a transparent background
+  that layers over a camera. It gets a fixed list of fields and nothing else — never a file
+  path, the log, or the image. So the card says *that* a write failed, not why; the why
+  stays in the app. Off until you turn it on, and it only listens on the same computer.
+- **Hide file paths.** To capture the whole window instead, one switch makes every file path
+  read `[hidden]` — in the log, minipro's and flashrom's command lines, error messages, and
+  both benches.
+
+The stream page follows the programmer bench for now; the Laptop EC bench isn't on it yet.
+
 ### What's next
 Writing an EC, once a backup is proven on real boards, and more chips behind the same
 screens, like the open ITE toolchain for ITE parts. The engine is ready for
