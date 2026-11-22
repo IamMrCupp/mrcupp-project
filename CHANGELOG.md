@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.4](https://github.com/IamMrCupp/mrcupp-project/compare/v1.14.3...v1.14.4) (2026-11-22)
+
+
+### Content
+
+* **projects:** benchhud's chip reference ([d4e7713](https://github.com/IamMrCupp/mrcupp-project/commit/d4e77131be21001306e27eefc31c01148c7f20f7))
+
 ## [1.14.3](https://github.com/IamMrCupp/mrcupp-project/compare/v1.14.2...v1.14.3) (2026-11-22)
 
 
