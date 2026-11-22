@@ -49,6 +49,15 @@ The panels that matter:
 - **Board docs** — a local library of board-view files keyed by part number, opened in
   OpenBoardView or FlexBV. "Do I have this board?" answered from the job, or across the
   whole open queue as a boards-to-source list.
+- **Chip reference** — type the mark printed on a part, like `X1=6A`, or a part number,
+  and get every chip it could be: maker, package, what it does, and the datasheet if I
+  have it. It's a list, never one answer, because the same three characters turn up on
+  different chips. It reads offline from folders I keep, my own notes on top of shared
+  data. benchhud ships no chip data and downloads nothing. When my data draws a blank,
+  Find chip hands the mark to a marking site in the browser, on a click only. Picking a
+  part in inventory shows the same details, and a chip card can go on stream: the part,
+  its package, and its marks, never the notes.
+  [How it works](https://github.com/IamMrCupp/benchhud/blob/main/docs/CHIPS.md).
 - **Tool launcher** — one-click into the repair tools already on the machine, from a dock
   along the bottom of the window.
 - **OBS scenes** — tools with windows of their own, like PulseView or OpenBoardView, each
