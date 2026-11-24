@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.6](https://github.com/IamMrCupp/mrcupp-project/compare/v1.14.5...v1.14.6) (2026-11-24)
+
+
+### Content
+
+* **projects:** benchhud's light, dark and custom themes ([b9d2343](https://github.com/IamMrCupp/mrcupp-project/commit/b9d234340749ceec152fa1d27e08c8a1621a4f6c))
+
 ## [1.14.5](https://github.com/IamMrCupp/mrcupp-project/compare/v1.14.4...v1.14.5) (2026-11-22)
 
 
