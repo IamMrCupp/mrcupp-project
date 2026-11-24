@@ -85,4 +85,7 @@ HUD's picture back byte for byte. No Windows bench has run it yet, and nobody ha
 in OBS there. Releases land often — expect the odd rough edge.
 
 It also matches [burnwright](/page/burnwright/) now — same palette, same panel look — so
-the two desktop apps on the bench read as one kit.
+the two desktop apps on the bench read as one kit. Dark by default, light if you'd rather,
+or whatever the OS says, and a theme file written for burnwright drops straight in. The
+meter, the power chart and the stream overlays keep their own colours whatever you pick.
+[Appearance and themes](https://github.com/IamMrCupp/benchhud/blob/main/docs/APPEARANCE.md).
